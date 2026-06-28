@@ -43,7 +43,7 @@ ANTHROPIC_API_KEY  = os.environ.get("ANTHROPIC_API_KEY", "")
 # --------------------------------------------------------------------------- #
 MODEL        = "claude-haiku-4-5-20251001"   # cheapest current tier
 LEVEL        = "A2/B1"
-WORDS_PER_DAY = 10
+WORDS_PER_DAY = 5
 MAX_TOKENS   = 4000          # 10 words with trilingual examples need room
 TEMPERATURE  = 0.7
 
