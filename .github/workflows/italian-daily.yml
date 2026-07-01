@@ -1,4 +1,4 @@
-name: Daily Italian Vocab
+name: Daily German Vocab
 
 on:
   schedule:
@@ -8,7 +8,7 @@ on:
   workflow_dispatch:   # adds a "Run workflow" button so you can test manually anytime
 
 permissions:
-  contents: write      # needed so the job can commit seen_words.json back to the repo
+  contents: write      # needed so the job can commit progress.json back to the repo
 
 jobs:
   send-lesson:
@@ -25,17 +25,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Send daily Italian lesson
+      - name: Send daily German lesson
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python italian_daily_bot.py --once
+        run: python german_daily_bot.py --once
 
-      - name: Save updated seen_words.json
+      - name: Save updated progress.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add seen_words.json
-          git commit -m "Update seen words [skip ci]" || echo "No changes to commit"
+          git add progress.json
+          git commit -m "Update learning progress [skip ci]" || echo "No changes to commit"
           git push
