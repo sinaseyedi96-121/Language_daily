@@ -6,13 +6,13 @@ by Claude Haiku. Built for RELEARNING German (B1 certified, studied toward
 C1, then a long gap) rather than starting from zero.
 
 Each day's message contains:
-  - A few brand-new B1 words (English translation, usage note, 3 example
-    sentences). Nouns include their article (der/die/das) and plural, since
-    gender is one of the first things that gets forgotten.
+  - A few brand-new B1 words (English translation, usage note, word family
+    of common derivations, 3 example sentences). Nouns include their article
+    (der/die/das) and plural, since gender is one of the first things that
+    gets forgotten.
   - A few REVIEW words resurfacing on a spaced-repetition schedule
     (roughly 1 -> 3 -> 7 -> 16 -> 35 -> 90 days after each successful review).
   - One short grammar tip, cycling through a fixed B1 grammar curriculum.
-  - Three quick review questions.
 
 State (which words exist, when they're next due, which grammar topic is
 next) lives in progress.json, which the GitHub Actions workflow commits
@@ -123,11 +123,14 @@ exactly this shape:
 {{
   "new_words": [
     {{
-      "german": "word or expression, infinitive form if a verb",
+      "german": "the word WITHOUT its article (e.g. 'Besorgnis', never 'die Besorgnis'), infinitive form if a verb",
       "article": "der, die, or das if this is a noun -- otherwise null",
       "plural": "the plural form if this is a noun -- otherwise null",
       "english": "English translation",
       "usage": "short usage note, or empty string if not useful",
+      "family": [
+        {{"word": "related word derived from the same root", "type": "noun/verb/adjective/adverb", "english": "translation"}}
+      ],
       "examples": [
         {{"de": "...", "en": "..."}},
         {{"de": "...", "en": "..."}},
@@ -147,13 +150,16 @@ exactly this shape:
       {{"de": "...", "en": "..."}},
       {{"de": "...", "en": "..."}}
     ]
-  }},
-  "review_questions": ["question 1", "question 2", "question 3"]
+  }}
 }}
 
 Rules:
-- "review_questions" has exactly 3 short questions testing today's new AND
-  review words.
+- "family" lists 2-4 words derived from the same root (e.g. for Besorgnis:
+  besorgen, besorgt, besorgniserregend). Include the article for nouns in
+  the "word" field here (e.g. "die Sorge"). Only include genuinely common,
+  {LEVEL}-useful derivations -- if none exist, use an empty list.
+- Never put der/die/das inside the "german" field itself -- the article
+  belongs ONLY in the "article" field.
 - Every example sentence is natural, {LEVEL}-appropriate German."""
 
 
@@ -284,8 +290,11 @@ def esc(text):
 
 
 def format_word_block(tag_emoji, index, w):
-    headword = w.get("german", "")
-    article = w.get("article")
+    headword = (w.get("german") or "").strip()
+    article = (w.get("article") or "").strip() or None
+    # defensive: if the model put the article inside the word anyway, strip it
+    if article and headword.lower().startswith(article.lower() + " "):
+        headword = headword[len(article) + 1:]
     display = f"{article} {headword}" if article else headword
 
     header = f"<b>{tag_emoji} {index}. {esc(display)}</b>"
@@ -293,13 +302,25 @@ def format_word_block(tag_emoji, index, w):
     if plural:
         header += f"  <i>(Pl. {esc(plural)})</i>"
 
-    lines = [header, f"🇬🇧 {esc(w.get('english'))}"]
+    lines = [header, f"➡️ {esc(w.get('english'))}"]
     if w.get("usage"):
         lines.append(f"💡 <i>{esc(w['usage'])}</i>")
+
+    family = w.get("family") or []
+    fam_parts = []
+    for fw in family:
+        word = (fw.get("word") or "").strip()
+        if not word:
+            continue
+        eng = (fw.get("english") or "").strip()
+        fam_parts.append(f"{esc(word)} ({esc(eng)})" if eng else esc(word))
+    if fam_parts:
+        lines.append(f"🌳 <i>{', '.join(fam_parts)}</i>")
+
     lines.append("")
     for ex in w.get("examples", []):
-        lines.append(f"🇩🇪 {esc(ex.get('de'))}")
-        lines.append(f"   🇬🇧 {esc(ex.get('en'))}")
+        lines.append(f"▪️ {esc(ex.get('de'))}")
+        lines.append(f"   ↳ {esc(ex.get('en'))}")
     return "\n".join(lines)
 
 
@@ -313,8 +334,8 @@ def format_grammar_tip(tip):
     if examples:
         lines.append("")
         for ex in examples:
-            lines.append(f"🇩🇪 {esc(ex.get('de'))}")
-            lines.append(f"   🇬🇧 {esc(ex.get('en'))}")
+            lines.append(f"▪️ {esc(ex.get('de'))}")
+            lines.append(f"   ↳ {esc(ex.get('en'))}")
     return "\n".join(lines)
 
 
@@ -330,13 +351,6 @@ def build_messages(lesson):
     grammar_tip = lesson.get("grammar_tip")
     if grammar_tip:
         sections.append(format_grammar_tip(grammar_tip))
-
-    questions = lesson.get("review_questions", [])
-    if questions:
-        qlines = ["📝 <b>Kurzer Test</b>\n"]
-        for i, q in enumerate(questions, 1):
-            qlines.append(f"{i}. {esc(q)}")
-        sections.append("\n".join(qlines))
 
     messages = []
     current = header
