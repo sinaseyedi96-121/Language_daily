@@ -1,0 +1,30 @@
+{
+  "vocab": {
+    "die Besorgnis": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "sich bewähren": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "die Auswirkung": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "der Umstand": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "vermeiden": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    }
+  },
+  "grammar_index": 1
+}
