@@ -24,7 +24,32 @@
       "first_seen": "2026-07-02",
       "review_count": 0,
       "next_review": "2026-07-03"
+    },
+    "Bedenken": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "Sachverhalt": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "erübrigen": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "Stellungnahme": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "hingegen": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
     }
   },
-  "grammar_index": 1
+  "grammar_index": 2
 }
