@@ -49,7 +49,32 @@
       "first_seen": "2026-07-02",
       "review_count": 0,
       "next_review": "2026-07-03"
+    },
+    "Gewöhnung": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "Abhängigkeit": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "Ausgleich": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "Verzicht": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
+    },
+    "Einsicht": {
+      "first_seen": "2026-07-02",
+      "review_count": 0,
+      "next_review": "2026-07-03"
     }
   },
-  "grammar_index": 2
+  "grammar_index": 3
 }
