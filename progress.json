@@ -74,7 +74,22 @@
       "first_seen": "2026-07-02",
       "review_count": 0,
       "next_review": "2026-07-03"
+    },
+    "Entgegnung": {
+      "first_seen": "2026-07-03",
+      "review_count": 0,
+      "next_review": "2026-07-04"
+    },
+    "Unklarheit": {
+      "first_seen": "2026-07-03",
+      "review_count": 0,
+      "next_review": "2026-07-04"
+    },
+    "Vorbeugung": {
+      "first_seen": "2026-07-03",
+      "review_count": 0,
+      "next_review": "2026-07-04"
     }
   },
-  "grammar_index": 3
+  "grammar_index": 4
 }
