@@ -1,12 +1,12 @@
 """
 german_daily_bot.py
 --------------------
-Sends a daily German (B1) reactivation lesson to a Telegram channel, generated
-by Claude Haiku. Built for RELEARNING German (B1 certified, studied toward
-C1, then a long gap) rather than starting from zero.
+Sends a daily German (A2/B1) reactivation lesson to a Telegram channel, generated
+by Claude Haiku. Built for RECALLING forgotten everyday German after a
+long gap, rather than learning from zero.
 
 Each day's message contains:
-  - A few brand-new B1 words (English translation, usage note, word family
+  - A few brand-new A2/B1 words (English translation, usage note, word family
     of common derivations, 3 example sentences). Nouns include their article
     (der/die/das) and plural, since gender is one of the first things that
     gets forgotten.
@@ -55,7 +55,7 @@ ANTHROPIC_API_KEY  = os.environ.get("ANTHROPIC_API_KEY", "")
 #  CONFIG
 # --------------------------------------------------------------------------- #
 MODEL        = "claude-haiku-4-5-20251001"   # cheapest current tier
-LEVEL        = "B1"
+LEVEL        = "A2/B1"
 
 WORDS_PER_DAY          = 5   # total vocab items per day (new + review combined)
 REVIEW_PER_DAY_TARGET  = 2   # how many of those we TRY to make review words
@@ -104,13 +104,28 @@ GRAMMAR_TOPICS = [
 # --------------------------------------------------------------------------- #
 #  PROMPT
 # --------------------------------------------------------------------------- #
-SYSTEM_PROMPT = f"""You are my German teacher. I am NOT a beginner: I hold a
-German B1 certificate and previously studied toward C1, but had a long gap
-with no practice and have forgotten a lot of vocabulary and grammar. Your
-job is to help me REACTIVATE {LEVEL}-level German, not teach it from zero.
-Skip absolute-beginner basics (hallo, numbers 1-10, colors, etc.) and focus
-on solid, practical {LEVEL} material across daily life, work, travel,
-communication, and bureaucracy. Avoid rare or literary words.
+SYSTEM_PROMPT = f"""You are my German teacher. I once reached {LEVEL} and then
+had a long gap with little practice, so I have forgotten many everyday words
+and grammar rules. Your job is to help me RECALL {LEVEL}-level German --
+practical, everyday language. This is about recovering basics, NOT about
+stretching toward advanced German.
+
+CRITICAL -- calibrate the difficulty correctly:
+- TARGET: concrete, high-frequency everyday words like: der Termin, die
+  Anmeldung, der Vertrag, die Rechnung, der Umzug, abholen, ausfüllen,
+  verschieben, die Verspätung, sich erkundigen. Words for: doctor visits,
+  renting a flat, shopping, trains and delays, appointments, filling out
+  forms, everyday work situations, small talk.
+- WRONG LEVEL -- never give words like these: der Sachverhalt, der
+  Stellhebel, das Regelwerk, die Entgegnung, die Gegenmaßnahme, die
+  Stellungnahme, sich erübrigen. That is B2/C1 business and policy register.
+  If a word mainly appears in reports, meetings-speak, or newspaper
+  commentary, it is the WRONG level for me.
+- Prefer concrete over abstract. A noun naming a thing, place, action, or
+  everyday situation beats an abstract nominalization every time.
+- Example sentences must be SHORT and SIMPLE (one clause, or at most one
+  subordinate clause) -- sentences I could realistically say out loud, not
+  written-German constructions.
 
 Do NOT include any Farsi.
 Do NOT conjugate verbs in the vocabulary list itself (give the infinitive) —
@@ -172,7 +187,7 @@ def build_user_message(new_count, review_words, known_words, grammar_topic):
             + ", ".join(known_words)
         )
     else:
-        parts.append("Nothing has been covered yet, so any solid B1 item is fine.")
+        parts.append("Nothing has been covered yet, so any solid everyday A2/B1 item is fine.")
 
     if review_words:
         parts.append(
@@ -340,7 +355,7 @@ def format_grammar_tip(tip):
 
 
 def build_messages(lesson):
-    header = "📚 <b>Deutsch des Tages — B1</b>\n\n"
+    header = "📚 <b>Deutsch des Tages — A2/B1</b>\n\n"
 
     sections = []
     for i, w in enumerate(lesson.get("new_words", []), 1):
@@ -442,7 +457,7 @@ def run_scheduled():
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Daily German (B1) reactivation Telegram bot")
+    parser = argparse.ArgumentParser(description="Daily German (A2/B1) reactivation Telegram bot")
     parser.add_argument("--once", action="store_true",
                         help="Generate and send a single lesson now, then exit.")
     args = parser.parse_args()
