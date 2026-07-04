@@ -89,7 +89,22 @@
       "first_seen": "2026-07-03",
       "review_count": 0,
       "next_review": "2026-07-04"
+    },
+    "Gegenmaßnahme": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
+    },
+    "Regelwerk": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
+    },
+    "Stellhebel": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
     }
   },
-  "grammar_index": 4
+  "grammar_index": 5
 }
