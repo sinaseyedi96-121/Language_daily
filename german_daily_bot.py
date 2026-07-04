@@ -57,15 +57,22 @@ ANTHROPIC_API_KEY  = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL        = "claude-haiku-4-5-20251001"   # cheapest current tier
 LEVEL        = "A2/B1"
 
-WORDS_PER_DAY          = 5   # total vocab items per day (new + review combined)
-REVIEW_PER_DAY_TARGET  = 2   # how many of those we TRY to make review words
-                              # (new words fill the rest -- always >= 3/day)
+# ---- DAILY WORD MIX --------------------------------------------------------
+# Change the numbers here to adjust how many NEW words you get per level.
+# The order below is also the order they appear in the message (easiest first).
+NEW_WORDS_PER_LEVEL = {
+    "A2": 3,   # everyday basics to recall
+    "B1": 3,   # your certified level
+    "B2": 1,   # one small stretch word per day
+}
+REVIEW_PER_DAY_TARGET = 2   # review words on top of the new ones (when due)
+# ----------------------------------------------------------------------------
 
 # Spaced-repetition intervals, in days, after the 1st/2nd/3rd/... successful
 # review of a word. Stays at the last value for further reviews.
 REVIEW_INTERVALS = [1, 3, 7, 16, 35, 90]
 
-MAX_TOKENS   = 4000
+MAX_TOKENS   = 6000   # 7 new + reviews need more room than the old 5
 TEMPERATURE  = 0.7
 
 SEND_TIME     = "08:00"        # 24h, local machine time (only used in loop mode)
@@ -110,22 +117,28 @@ and grammar rules. Your job is to help me RECALL {LEVEL}-level German --
 practical, everyday language. This is about recovering basics, NOT about
 stretching toward advanced German.
 
-CRITICAL -- calibrate the difficulty correctly:
-- TARGET: concrete, high-frequency everyday words like: der Termin, die
-  Anmeldung, der Vertrag, die Rechnung, der Umzug, abholen, ausfüllen,
-  verschieben, die Verspätung, sich erkundigen. Words for: doctor visits,
-  renting a flat, shopping, trains and delays, appointments, filling out
-  forms, everyday work situations, small talk.
-- WRONG LEVEL -- never give words like these: der Sachverhalt, der
-  Stellhebel, das Regelwerk, die Entgegnung, die Gegenmaßnahme, die
-  Stellungnahme, sich erübrigen. That is B2/C1 business and policy register.
-  If a word mainly appears in reports, meetings-speak, or newspaper
-  commentary, it is the WRONG level for me.
+Each day I ask for a specific number of new words PER LEVEL. Calibrate each
+level like this:
+- A2 words: high-frequency everyday basics I may have forgotten, like:
+  der Termin, abholen, die Rechnung, der Schlüssel, sich beeilen,
+  die Verspätung. Simple, concrete, daily-routine words.
+- B1 words: still everyday and practical but a step up, like: die Anmeldung,
+  der Vertrag, verschieben, sich erkundigen, der Umzug, die Bewerbung.
+  Situations: renting a flat, doctor visits, forms, trains, ordinary work.
+- B2 words (only when I ask for them): useful, SPOKEN-German B2 -- words a
+  native uses in normal conversation, like: sich Gedanken machen, die
+  Voraussetzung, sich gewöhnen an, ausgerechnet, zuverlässig. NOT formal
+  business/policy register.
+- WRONG at any level -- never give words like: der Sachverhalt, der
+  Stellhebel, das Regelwerk, die Entgegnung, die Stellungnahme, sich
+  erübrigen. If a word mainly appears in reports, meetings-speak, or
+  newspaper commentary, do not use it.
 - Prefer concrete over abstract. A noun naming a thing, place, action, or
   everyday situation beats an abstract nominalization every time.
 - Example sentences must be SHORT and SIMPLE (one clause, or at most one
   subordinate clause) -- sentences I could realistically say out loud, not
-  written-German constructions.
+  written-German constructions. Match the sentence difficulty to the
+  word's level: A2 words get very simple sentences.
 
 Do NOT include any Farsi.
 Do NOT conjugate verbs in the vocabulary list itself (give the infinitive) —
@@ -139,6 +152,7 @@ exactly this shape:
   "new_words": [
     {{
       "german": "the word WITHOUT its article (e.g. 'Besorgnis', never 'die Besorgnis'), infinitive form if a verb",
+      "level": "A2, B1, or B2 -- the level slot this word fills",
       "article": "der, die, or das if this is a noun -- otherwise null",
       "plural": "the plural form if this is a noun -- otherwise null",
       "english": "English translation",
@@ -169,6 +183,8 @@ exactly this shape:
 }}
 
 Rules:
+- Provide EXACTLY the number of new words per level that I request, and
+  order "new_words" from easiest to hardest (A2 first, then B1, then B2).
 - "family" lists 2-4 words derived from the same root (e.g. for Besorgnis:
   besorgen, besorgt, besorgniserregend). Include the article for nouns in
   the "word" field here (e.g. "die Sorge"). Only include genuinely common,
@@ -178,8 +194,10 @@ Rules:
 - Every example sentence is natural, {LEVEL}-appropriate German."""
 
 
-def build_user_message(new_count, review_words, known_words, grammar_topic):
-    parts = [f"Give me {new_count} NEW words/expressions I haven't seen before."]
+def build_user_message(level_counts, review_words, known_words, grammar_topic):
+    breakdown = ", ".join(f"{n} at {lvl} level" for lvl, n in level_counts.items() if n > 0)
+    total = sum(n for n in level_counts.values() if n > 0)
+    parts = [f"Give me {total} NEW words/expressions I haven't seen before: {breakdown}."]
 
     if known_words:
         parts.append(
@@ -266,7 +284,7 @@ def update_vocab_after_send(vocab, new_items, review_items, requested_review_wor
 # --------------------------------------------------------------------------- #
 #  CLAUDE
 # --------------------------------------------------------------------------- #
-def generate_lesson(new_count, review_words, known_words, grammar_topic):
+def generate_lesson(level_counts, review_words, known_words, grammar_topic):
     headers = {
         "x-api-key": ANTHROPIC_API_KEY,
         "anthropic-version": "2023-06-01",
@@ -279,7 +297,7 @@ def generate_lesson(new_count, review_words, known_words, grammar_topic):
         "system": SYSTEM_PROMPT,
         "messages": [{
             "role": "user",
-            "content": build_user_message(new_count, review_words, known_words, grammar_topic),
+            "content": build_user_message(level_counts, review_words, known_words, grammar_topic),
         }],
     }
 
@@ -316,6 +334,9 @@ def format_word_block(tag_emoji, index, w):
     plural = w.get("plural")
     if plural:
         header += f"  <i>(Pl. {esc(plural)})</i>"
+    level = (w.get("level") or "").strip()
+    if level:
+        header += f"  [{esc(level)}]"
 
     lines = [header, f"➡️ {esc(w.get('english'))}"]
     if w.get("usage"):
@@ -412,13 +433,13 @@ def run_once():
     vocab = progress["vocab"]
 
     review_words = get_due_review_words(vocab, REVIEW_PER_DAY_TARGET)
-    new_count = WORDS_PER_DAY - len(review_words)
     known_words = list(vocab.keys())
     grammar_topic = GRAMMAR_TOPICS[progress["grammar_index"] % len(GRAMMAR_TOPICS)]
 
-    print(f"Requesting {new_count} new word(s), {len(review_words)} review word(s), "
+    mix = ", ".join(f"{n}x{lvl}" for lvl, n in NEW_WORDS_PER_LEVEL.items() if n > 0)
+    print(f"Requesting new words ({mix}), {len(review_words)} review word(s), "
           f"grammar topic: {grammar_topic}")
-    lesson = generate_lesson(new_count, review_words, known_words, grammar_topic)
+    lesson = generate_lesson(NEW_WORDS_PER_LEVEL, review_words, known_words, grammar_topic)
 
     # only trust review items that match a word we actually asked about
     review_items = [
