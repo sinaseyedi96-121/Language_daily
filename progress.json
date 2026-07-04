@@ -1,1 +1,40 @@
-{"vocab": {}, "grammar_index": 0}
+{
+  "vocab": {
+    "Termin": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
+    },
+    "abholen": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
+    },
+    "Schlüssel": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
+    },
+    "Anmeldung": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
+    },
+    "verschieben": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
+    },
+    "Umzug": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
+    },
+    "sich gewöhnen an": {
+      "first_seen": "2026-07-04",
+      "review_count": 0,
+      "next_review": "2026-07-05"
+    }
+  },
+  "grammar_index": 1
+}
