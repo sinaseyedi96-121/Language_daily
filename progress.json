@@ -2,13 +2,15 @@
   "vocab": {
     "Termin": {
       "first_seen": "2026-07-04",
-      "review_count": 0,
-      "next_review": "2026-07-05"
+      "review_count": 1,
+      "next_review": "2026-07-08",
+      "last_reviewed": "2026-07-05"
     },
     "abholen": {
       "first_seen": "2026-07-04",
-      "review_count": 0,
-      "next_review": "2026-07-05"
+      "review_count": 1,
+      "next_review": "2026-07-08",
+      "last_reviewed": "2026-07-05"
     },
     "Schlüssel": {
       "first_seen": "2026-07-04",
@@ -34,7 +36,42 @@
       "first_seen": "2026-07-04",
       "review_count": 0,
       "next_review": "2026-07-05"
+    },
+    "Verspätung": {
+      "first_seen": "2026-07-05",
+      "review_count": 0,
+      "next_review": "2026-07-06"
+    },
+    "sich beeilen": {
+      "first_seen": "2026-07-05",
+      "review_count": 0,
+      "next_review": "2026-07-06"
+    },
+    "Rechnung": {
+      "first_seen": "2026-07-05",
+      "review_count": 0,
+      "next_review": "2026-07-06"
+    },
+    "Vertrag": {
+      "first_seen": "2026-07-05",
+      "review_count": 0,
+      "next_review": "2026-07-06"
+    },
+    "sich erkundigen": {
+      "first_seen": "2026-07-05",
+      "review_count": 0,
+      "next_review": "2026-07-06"
+    },
+    "Bewerbung": {
+      "first_seen": "2026-07-05",
+      "review_count": 0,
+      "next_review": "2026-07-06"
+    },
+    "ausgerechnet": {
+      "first_seen": "2026-07-05",
+      "review_count": 0,
+      "next_review": "2026-07-06"
     }
   },
-  "grammar_index": 1
+  "grammar_index": 2
 }
