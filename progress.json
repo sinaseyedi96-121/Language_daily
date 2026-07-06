@@ -14,13 +14,15 @@
     },
     "Schlüssel": {
       "first_seen": "2026-07-04",
-      "review_count": 0,
-      "next_review": "2026-07-05"
+      "review_count": 1,
+      "next_review": "2026-07-09",
+      "last_reviewed": "2026-07-06"
     },
     "Anmeldung": {
       "first_seen": "2026-07-04",
-      "review_count": 0,
-      "next_review": "2026-07-05"
+      "review_count": 1,
+      "next_review": "2026-07-09",
+      "last_reviewed": "2026-07-06"
     },
     "verschieben": {
       "first_seen": "2026-07-04",
@@ -71,7 +73,42 @@
       "first_seen": "2026-07-05",
       "review_count": 0,
       "next_review": "2026-07-06"
+    },
+    "Geld": {
+      "first_seen": "2026-07-06",
+      "review_count": 0,
+      "next_review": "2026-07-07"
+    },
+    "Lage": {
+      "first_seen": "2026-07-06",
+      "review_count": 0,
+      "next_review": "2026-07-07"
+    },
+    "Tasse": {
+      "first_seen": "2026-07-06",
+      "review_count": 0,
+      "next_review": "2026-07-07"
+    },
+    "Grund": {
+      "first_seen": "2026-07-06",
+      "review_count": 0,
+      "next_review": "2026-07-07"
+    },
+    "Pflicht": {
+      "first_seen": "2026-07-06",
+      "review_count": 0,
+      "next_review": "2026-07-07"
+    },
+    "Lücke": {
+      "first_seen": "2026-07-06",
+      "review_count": 0,
+      "next_review": "2026-07-07"
+    },
+    "sich ärgern": {
+      "first_seen": "2026-07-06",
+      "review_count": 0,
+      "next_review": "2026-07-07"
     }
   },
-  "grammar_index": 2
+  "grammar_index": 3
 }
