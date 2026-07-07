@@ -26,13 +26,15 @@
     },
     "verschieben": {
       "first_seen": "2026-07-04",
-      "review_count": 0,
-      "next_review": "2026-07-05"
+      "review_count": 1,
+      "next_review": "2026-07-10",
+      "last_reviewed": "2026-07-07"
     },
     "Umzug": {
       "first_seen": "2026-07-04",
-      "review_count": 0,
-      "next_review": "2026-07-05"
+      "review_count": 1,
+      "next_review": "2026-07-10",
+      "last_reviewed": "2026-07-07"
     },
     "sich gewöhnen an": {
       "first_seen": "2026-07-04",
@@ -108,7 +110,42 @@
       "first_seen": "2026-07-06",
       "review_count": 0,
       "next_review": "2026-07-07"
+    },
+    "Gepäck": {
+      "first_seen": "2026-07-07",
+      "review_count": 0,
+      "next_review": "2026-07-08"
+    },
+    "Nachbar": {
+      "first_seen": "2026-07-07",
+      "review_count": 0,
+      "next_review": "2026-07-08"
+    },
+    "Pflanze": {
+      "first_seen": "2026-07-07",
+      "review_count": 0,
+      "next_review": "2026-07-08"
+    },
+    "Fahrkarte": {
+      "first_seen": "2026-07-07",
+      "review_count": 0,
+      "next_review": "2026-07-08"
+    },
+    "Vermieter": {
+      "first_seen": "2026-07-07",
+      "review_count": 0,
+      "next_review": "2026-07-08"
+    },
+    "Auskunft": {
+      "first_seen": "2026-07-07",
+      "review_count": 0,
+      "next_review": "2026-07-08"
+    },
+    "sich Gedanken machen": {
+      "first_seen": "2026-07-07",
+      "review_count": 0,
+      "next_review": "2026-07-08"
     }
   },
-  "grammar_index": 3
+  "grammar_index": 4
 }
