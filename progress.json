@@ -38,13 +38,15 @@
     },
     "sich gewöhnen an": {
       "first_seen": "2026-07-04",
-      "review_count": 0,
-      "next_review": "2026-07-05"
+      "review_count": 1,
+      "next_review": "2026-07-11",
+      "last_reviewed": "2026-07-08"
     },
     "Verspätung": {
       "first_seen": "2026-07-05",
-      "review_count": 0,
-      "next_review": "2026-07-06"
+      "review_count": 1,
+      "next_review": "2026-07-11",
+      "last_reviewed": "2026-07-08"
     },
     "sich beeilen": {
       "first_seen": "2026-07-05",
@@ -145,7 +147,42 @@
       "first_seen": "2026-07-07",
       "review_count": 0,
       "next_review": "2026-07-08"
+    },
+    "Hinweis": {
+      "first_seen": "2026-07-08",
+      "review_count": 0,
+      "next_review": "2026-07-09"
+    },
+    "Betrag": {
+      "first_seen": "2026-07-08",
+      "review_count": 0,
+      "next_review": "2026-07-09"
+    },
+    "Lärm": {
+      "first_seen": "2026-07-08",
+      "review_count": 0,
+      "next_review": "2026-07-09"
+    },
+    "Besorgnis": {
+      "first_seen": "2026-07-08",
+      "review_count": 0,
+      "next_review": "2026-07-09"
+    },
+    "Zeuge": {
+      "first_seen": "2026-07-08",
+      "review_count": 0,
+      "next_review": "2026-07-09"
+    },
+    "Verzögerung": {
+      "first_seen": "2026-07-08",
+      "review_count": 0,
+      "next_review": "2026-07-09"
+    },
+    "zuverlässig": {
+      "first_seen": "2026-07-08",
+      "review_count": 0,
+      "next_review": "2026-07-09"
     }
   },
-  "grammar_index": 4
+  "grammar_index": 5
 }
