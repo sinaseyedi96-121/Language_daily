@@ -50,13 +50,15 @@
     },
     "sich beeilen": {
       "first_seen": "2026-07-05",
-      "review_count": 0,
-      "next_review": "2026-07-06"
+      "review_count": 1,
+      "next_review": "2026-07-12",
+      "last_reviewed": "2026-07-09"
     },
     "Rechnung": {
       "first_seen": "2026-07-05",
-      "review_count": 0,
-      "next_review": "2026-07-06"
+      "review_count": 1,
+      "next_review": "2026-07-12",
+      "last_reviewed": "2026-07-09"
     },
     "Vertrag": {
       "first_seen": "2026-07-05",
@@ -184,5 +186,5 @@
       "next_review": "2026-07-09"
     }
   },
-  "grammar_index": 5
+  "grammar_index": 6
 }
