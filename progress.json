@@ -62,13 +62,15 @@
     },
     "Vertrag": {
       "first_seen": "2026-07-05",
-      "review_count": 0,
-      "next_review": "2026-07-06"
+      "review_count": 1,
+      "next_review": "2026-07-13",
+      "last_reviewed": "2026-07-10"
     },
     "sich erkundigen": {
       "first_seen": "2026-07-05",
-      "review_count": 0,
-      "next_review": "2026-07-06"
+      "review_count": 1,
+      "next_review": "2026-07-13",
+      "last_reviewed": "2026-07-10"
     },
     "Bewerbung": {
       "first_seen": "2026-07-05",
@@ -184,7 +186,42 @@
       "first_seen": "2026-07-08",
       "review_count": 0,
       "next_review": "2026-07-09"
+    },
+    "Zutat": {
+      "first_seen": "2026-07-10",
+      "review_count": 0,
+      "next_review": "2026-07-11"
+    },
+    "Decke": {
+      "first_seen": "2026-07-10",
+      "review_count": 0,
+      "next_review": "2026-07-11"
+    },
+    "Husten": {
+      "first_seen": "2026-07-10",
+      "review_count": 0,
+      "next_review": "2026-07-11"
+    },
+    "Pünktlichkeit": {
+      "first_seen": "2026-07-10",
+      "review_count": 0,
+      "next_review": "2026-07-11"
+    },
+    "Beschwerde": {
+      "first_seen": "2026-07-10",
+      "review_count": 0,
+      "next_review": "2026-07-11"
+    },
+    "Rückgabe": {
+      "first_seen": "2026-07-10",
+      "review_count": 0,
+      "next_review": "2026-07-11"
+    },
+    "sich verspäten": {
+      "first_seen": "2026-07-10",
+      "review_count": 0,
+      "next_review": "2026-07-11"
     }
   },
-  "grammar_index": 6
+  "grammar_index": 7
 }
