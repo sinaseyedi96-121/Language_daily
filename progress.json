@@ -74,13 +74,15 @@
     },
     "Bewerbung": {
       "first_seen": "2026-07-05",
-      "review_count": 0,
-      "next_review": "2026-07-06"
+      "review_count": 1,
+      "next_review": "2026-07-14",
+      "last_reviewed": "2026-07-11"
     },
     "ausgerechnet": {
       "first_seen": "2026-07-05",
-      "review_count": 0,
-      "next_review": "2026-07-06"
+      "review_count": 1,
+      "next_review": "2026-07-14",
+      "last_reviewed": "2026-07-11"
     },
     "Geld": {
       "first_seen": "2026-07-06",
@@ -221,7 +223,42 @@
       "first_seen": "2026-07-10",
       "review_count": 0,
       "next_review": "2026-07-11"
+    },
+    "Paket": {
+      "first_seen": "2026-07-11",
+      "review_count": 0,
+      "next_review": "2026-07-12"
+    },
+    "Handschuh": {
+      "first_seen": "2026-07-11",
+      "review_count": 0,
+      "next_review": "2026-07-12"
+    },
+    "Zahnschmerz": {
+      "first_seen": "2026-07-11",
+      "review_count": 0,
+      "next_review": "2026-07-12"
+    },
+    "Frist": {
+      "first_seen": "2026-07-11",
+      "review_count": 0,
+      "next_review": "2026-07-12"
+    },
+    "Schaden": {
+      "first_seen": "2026-07-11",
+      "review_count": 0,
+      "next_review": "2026-07-12"
+    },
+    "Beratung": {
+      "first_seen": "2026-07-11",
+      "review_count": 0,
+      "next_review": "2026-07-12"
+    },
+    "sich einigen": {
+      "first_seen": "2026-07-11",
+      "review_count": 0,
+      "next_review": "2026-07-12"
     }
   },
-  "grammar_index": 7
+  "grammar_index": 8
 }
