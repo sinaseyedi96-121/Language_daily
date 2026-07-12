@@ -86,13 +86,15 @@
     },
     "Geld": {
       "first_seen": "2026-07-06",
-      "review_count": 0,
-      "next_review": "2026-07-07"
+      "review_count": 1,
+      "next_review": "2026-07-15",
+      "last_reviewed": "2026-07-12"
     },
     "Lage": {
       "first_seen": "2026-07-06",
-      "review_count": 0,
-      "next_review": "2026-07-07"
+      "review_count": 1,
+      "next_review": "2026-07-15",
+      "last_reviewed": "2026-07-12"
     },
     "Tasse": {
       "first_seen": "2026-07-06",
@@ -258,7 +260,42 @@
       "first_seen": "2026-07-11",
       "review_count": 0,
       "next_review": "2026-07-12"
+    },
+    "Öffnungszeit": {
+      "first_seen": "2026-07-12",
+      "review_count": 0,
+      "next_review": "2026-07-13"
+    },
+    "Vorrat": {
+      "first_seen": "2026-07-12",
+      "review_count": 0,
+      "next_review": "2026-07-13"
+    },
+    "Gewöhnung": {
+      "first_seen": "2026-07-12",
+      "review_count": 0,
+      "next_review": "2026-07-13"
+    },
+    "Besuch": {
+      "first_seen": "2026-07-12",
+      "review_count": 0,
+      "next_review": "2026-07-13"
+    },
+    "Belastung": {
+      "first_seen": "2026-07-12",
+      "review_count": 0,
+      "next_review": "2026-07-13"
+    },
+    "Regelung": {
+      "first_seen": "2026-07-12",
+      "review_count": 0,
+      "next_review": "2026-07-13"
+    },
+    "sich herausstellen": {
+      "first_seen": "2026-07-12",
+      "review_count": 0,
+      "next_review": "2026-07-13"
     }
   },
-  "grammar_index": 8
+  "grammar_index": 9
 }
