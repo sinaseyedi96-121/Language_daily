@@ -110,13 +110,15 @@
     },
     "Pflicht": {
       "first_seen": "2026-07-06",
-      "review_count": 0,
-      "next_review": "2026-07-07"
+      "review_count": 1,
+      "next_review": "2026-07-17",
+      "last_reviewed": "2026-07-14"
     },
     "Lücke": {
       "first_seen": "2026-07-06",
-      "review_count": 0,
-      "next_review": "2026-07-07"
+      "review_count": 1,
+      "next_review": "2026-07-17",
+      "last_reviewed": "2026-07-14"
     },
     "sich ärgern": {
       "first_seen": "2026-07-06",
@@ -332,7 +334,42 @@
       "first_seen": "2026-07-13",
       "review_count": 0,
       "next_review": "2026-07-14"
+    },
+    "Fahrstuhl": {
+      "first_seen": "2026-07-14",
+      "review_count": 0,
+      "next_review": "2026-07-15"
+    },
+    "Bahnhof": {
+      "first_seen": "2026-07-14",
+      "review_count": 0,
+      "next_review": "2026-07-15"
+    },
+    "Gepäckaufbewahrung": {
+      "first_seen": "2026-07-14",
+      "review_count": 0,
+      "next_review": "2026-07-15"
+    },
+    "Makler": {
+      "first_seen": "2026-07-14",
+      "review_count": 0,
+      "next_review": "2026-07-15"
+    },
+    "Kaution": {
+      "first_seen": "2026-07-14",
+      "review_count": 0,
+      "next_review": "2026-07-15"
+    },
+    "Besichtigung": {
+      "first_seen": "2026-07-14",
+      "review_count": 0,
+      "next_review": "2026-07-15"
+    },
+    "Voraussetzung": {
+      "first_seen": "2026-07-14",
+      "review_count": 0,
+      "next_review": "2026-07-15"
     }
   },
-  "grammar_index": 10
+  "grammar_index": 11
 }
