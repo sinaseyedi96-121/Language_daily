@@ -2,9 +2,9 @@
   "vocab": {
     "Termin": {
       "first_seen": "2026-07-04",
-      "review_count": 1,
-      "next_review": "2026-07-08",
-      "last_reviewed": "2026-07-05"
+      "review_count": 2,
+      "next_review": "2026-07-22",
+      "last_reviewed": "2026-07-15"
     },
     "abholen": {
       "first_seen": "2026-07-04",
@@ -122,8 +122,9 @@
     },
     "sich ärgern": {
       "first_seen": "2026-07-06",
-      "review_count": 0,
-      "next_review": "2026-07-07"
+      "review_count": 1,
+      "next_review": "2026-07-18",
+      "last_reviewed": "2026-07-15"
     },
     "Gepäck": {
       "first_seen": "2026-07-07",
@@ -369,7 +370,32 @@
       "first_seen": "2026-07-14",
       "review_count": 0,
       "next_review": "2026-07-15"
+    },
+    "Strom": {
+      "first_seen": "2026-07-15",
+      "review_count": 0,
+      "next_review": "2026-07-16"
+    },
+    "Wasser": {
+      "first_seen": "2026-07-15",
+      "review_count": 0,
+      "next_review": "2026-07-16"
+    },
+    "Miete": {
+      "first_seen": "2026-07-15",
+      "review_count": 0,
+      "next_review": "2026-07-16"
+    },
+    "Nebenkosten": {
+      "first_seen": "2026-07-15",
+      "review_count": 0,
+      "next_review": "2026-07-16"
+    },
+    "sich auskennen": {
+      "first_seen": "2026-07-15",
+      "review_count": 0,
+      "next_review": "2026-07-16"
     }
   },
-  "grammar_index": 11
+  "grammar_index": 12
 }
