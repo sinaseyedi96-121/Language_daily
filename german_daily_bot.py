@@ -56,6 +56,7 @@ ANTHROPIC_API_KEY  = os.environ.get("ANTHROPIC_API_KEY", "")
 # --------------------------------------------------------------------------- #
 MODEL        = "claude-haiku-4-5-20251001"   # cheapest current tier
 LEVEL        = "A2/B1"
+EXAMPLE_LEVEL = "B1/B2"      # example sentences are pitched a notch above word level
 
 # ---- DAILY WORD MIX --------------------------------------------------------
 # Change the numbers here to adjust how many NEW words you get per level.
@@ -135,10 +136,12 @@ level like this:
   newspaper commentary, do not use it.
 - Prefer concrete over abstract. A noun naming a thing, place, action, or
   everyday situation beats an abstract nominalization every time.
-- Example sentences must be SHORT and SIMPLE (one clause, or at most one
-  subordinate clause) -- sentences I could realistically say out loud, not
-  written-German constructions. Match the sentence difficulty to the
-  word's level: A2 words get very simple sentences.
+- Example sentences should be pitched at {EXAMPLE_LEVEL} level, regardless of
+  the target word's own level: natural, complete sentences a fluent
+  intermediate speaker would actually say out loud, comfortable using a
+  subordinate clause and everyday connectors (weil, wenn, obwohl, deshalb,
+  nachdem, bevor, damit...). Not simplistic A2 fragments, but still
+  spoken-register German, not written/formal constructions.
 
 Do NOT include any Farsi.
 Do NOT conjugate verbs in the vocabulary list itself (give the infinitive) —
@@ -157,6 +160,7 @@ exactly this shape:
       "plural": "the plural form if this is a noun -- otherwise null",
       "english": "English translation",
       "usage": "short usage note, or empty string if not useful",
+      "synonyms": ["2-3 German synonyms for this word, including der/die/das for noun synonyms -- empty list if no good synonym exists"],
       "family": [
         {{"word": "related word derived from the same root", "type": "noun/verb/adjective/adverb", "english": "translation"}}
       ],
@@ -189,9 +193,14 @@ Rules:
   besorgen, besorgt, besorgniserregend). Include the article for nouns in
   the "word" field here (e.g. "die Sorge"). Only include genuinely common,
   {LEVEL}-useful derivations -- if none exist, use an empty list.
+- "synonyms" lists 2-3 real, commonly-used German words or short expressions
+  that could replace the headword in casual speech without changing the
+  meaning much (e.g. for sich beeilen: sich sputen, keine Zeit verlieren).
+  Include der/die/das for noun synonyms. Never invent a weak or awkward
+  synonym just to fill the quota -- an empty list is fine if none exist.
 - Never put der/die/das inside the "german" field itself -- the article
   belongs ONLY in the "article" field.
-- Every example sentence is natural, {LEVEL}-appropriate German."""
+- Every example sentence is natural, {EXAMPLE_LEVEL}-appropriate German."""
 
 
 def build_user_message(level_counts, review_words, known_words, grammar_topic):
@@ -338,7 +347,11 @@ def format_word_block(tag_emoji, index, w):
     if level:
         header += f"  [{esc(level)}]"
 
-    lines = [header, f"➡️ {esc(w.get('english'))}"]
+    lines = [header]
+    synonyms = [s.strip() for s in (w.get("synonyms") or []) if s and s.strip()]
+    if synonyms:
+        lines.append(f"🔗 <i>{esc(', '.join(synonyms))}</i>")
+    lines.append(f"➡️ {esc(w.get('english'))}")
     if w.get("usage"):
         lines.append(f"💡 <i>{esc(w['usage'])}</i>")
 
