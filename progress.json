@@ -8,9 +8,9 @@
     },
     "abholen": {
       "first_seen": "2026-07-04",
-      "review_count": 1,
-      "next_review": "2026-07-08",
-      "last_reviewed": "2026-07-05"
+      "review_count": 2,
+      "next_review": "2026-07-23",
+      "last_reviewed": "2026-07-16"
     },
     "Schlüssel": {
       "first_seen": "2026-07-04",
@@ -128,8 +128,9 @@
     },
     "Gepäck": {
       "first_seen": "2026-07-07",
-      "review_count": 0,
-      "next_review": "2026-07-08"
+      "review_count": 1,
+      "next_review": "2026-07-19",
+      "last_reviewed": "2026-07-16"
     },
     "Nachbar": {
       "first_seen": "2026-07-07",
@@ -395,7 +396,42 @@
       "first_seen": "2026-07-15",
       "review_count": 0,
       "next_review": "2026-07-16"
+    },
+    "Öl": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "Handtuch": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "Feuchtigkeit": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "Lüftung": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "Schimmel": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "Insekt": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "sich beschweren": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
     }
   },
-  "grammar_index": 12
+  "grammar_index": 13
 }
