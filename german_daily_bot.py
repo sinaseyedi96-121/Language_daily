@@ -6,10 +6,10 @@ by Claude Haiku. Built for RECALLING forgotten everyday German after a
 long gap, rather than learning from zero.
 
 Each day's message contains:
-  - A few brand-new A2/B1 words (English translation, usage note, word family
-    of common derivations, 3 example sentences). Nouns include their article
-    (der/die/das) and plural, since gender is one of the first things that
-    gets forgotten.
+  - A few brand-new A2/B1 words (English + Turkish translation, usage note,
+    word family of common derivations, 3 example sentences). Nouns include
+    their article (der/die/das) and plural, since gender is one of the
+    first things that gets forgotten.
   - A few REVIEW words resurfacing on a spaced-repetition schedule
     (roughly 1 -> 3 -> 7 -> 16 -> 35 -> 90 days after each successful review).
   - One short grammar tip, cycling through a fixed B1 grammar curriculum.
@@ -73,7 +73,7 @@ REVIEW_PER_DAY_TARGET = 2   # review words on top of the new ones (when due)
 # review of a word. Stays at the last value for further reviews.
 REVIEW_INTERVALS = [1, 3, 7, 16, 35, 90]
 
-MAX_TOKENS   = 6000   # 7 new + reviews need more room than the old 5
+MAX_TOKENS   = 9000   # Turkish fields roughly double the translated text per word
 TEMPERATURE  = 0.7
 
 SEND_TIME     = "08:00"        # 24h, local machine time (only used in loop mode)
@@ -149,6 +149,12 @@ conjugated forms are fine ONLY inside the grammar tip, if that topic needs one.
 For nouns, ALWAYS include the definite article (der/die/das) and the plural
 form — gender is exactly the kind of thing that gets forgotten first.
 
+I am learning German through BOTH English and Turkish, so every English
+field below has a matching Turkish field. Produce natural, fluent Türkiye
+Turkish (not Azerbaijani, not a literal word-for-word crib) — the kind a
+Turkish speaker would actually say, using proper Turkish characters
+(ğ, ı, İ, ş, ç, ö, ü). Do NOT include any Farsi in the Turkish text either.
+
 Return ONLY valid JSON, no markdown, no code fences, no commentary, in
 exactly this shape:
 {{
@@ -159,15 +165,17 @@ exactly this shape:
       "article": "der, die, or das if this is a noun -- otherwise null",
       "plural": "the plural form if this is a noun -- otherwise null",
       "english": "English translation",
-      "usage": "short usage note, or empty string if not useful",
+      "turkish": "Turkish translation",
+      "usage": "short usage note in English, or empty string if not useful",
+      "usage_tr": "the same usage note in Turkish, or empty string if 'usage' is empty",
       "synonyms": ["2-3 German synonyms for this word, including der/die/das for noun synonyms -- empty list if no good synonym exists"],
       "family": [
-        {{"word": "related word derived from the same root", "type": "noun/verb/adjective/adverb", "english": "translation"}}
+        {{"word": "related word derived from the same root", "type": "noun/verb/adjective/adverb", "english": "translation", "turkish": "Turkish translation"}}
       ],
       "examples": [
-        {{"de": "...", "en": "..."}},
-        {{"de": "...", "en": "..."}},
-        {{"de": "...", "en": "..."}}
+        {{"de": "...", "en": "...", "tr": "..."}},
+        {{"de": "...", "en": "...", "tr": "..."}},
+        {{"de": "...", "en": "...", "tr": "..."}}
       ]
     }}
   ],
@@ -178,10 +186,11 @@ exactly this shape:
   ],
   "grammar_tip": {{
     "topic": "the topic I gave you",
-    "explanation": "2-4 sentences, clear and practical",
+    "explanation": "2-4 sentences, clear and practical, in English",
+    "explanation_tr": "the same explanation in Turkish",
     "examples": [
-      {{"de": "...", "en": "..."}},
-      {{"de": "...", "en": "..."}}
+      {{"de": "...", "en": "...", "tr": "..."}},
+      {{"de": "...", "en": "...", "tr": "..."}}
     ]
   }}
 }}
@@ -200,7 +209,10 @@ Rules:
   synonym just to fill the quota -- an empty list is fine if none exist.
 - Never put der/die/das inside the "german" field itself -- the article
   belongs ONLY in the "article" field.
-- Every example sentence is natural, {EXAMPLE_LEVEL}-appropriate German."""
+- Every example sentence is natural, {EXAMPLE_LEVEL}-appropriate German.
+- Every "turkish", "usage_tr", "explanation_tr", and "tr" field must be a
+  faithful, natural translation of its English counterpart -- same meaning,
+  same register, never abbreviated or skipped."""
 
 
 def build_user_message(level_counts, review_words, known_words, grammar_topic):
@@ -352,8 +364,11 @@ def format_word_block(tag_emoji, index, w):
     if synonyms:
         lines.append(f"🔗 <i>{esc(', '.join(synonyms))}</i>")
     lines.append(f"➡️ {esc(w.get('english'))}")
+    lines.append(f"🇹🇷 {esc(w.get('turkish'))}")
     if w.get("usage"):
         lines.append(f"💡 <i>{esc(w['usage'])}</i>")
+        if w.get("usage_tr"):
+            lines.append(f"🇹🇷 <i>{esc(w['usage_tr'])}</i>")
 
     family = w.get("family") or []
     fam_parts = []
@@ -362,7 +377,9 @@ def format_word_block(tag_emoji, index, w):
         if not word:
             continue
         eng = (fw.get("english") or "").strip()
-        fam_parts.append(f"{esc(word)} ({esc(eng)})" if eng else esc(word))
+        tur = (fw.get("turkish") or "").strip()
+        gloss = " / ".join(g for g in (eng, tur) if g)
+        fam_parts.append(f"{esc(word)} ({esc(gloss)})" if gloss else esc(word))
     if fam_parts:
         lines.append(f"🌳 <i>{', '.join(fam_parts)}</i>")
 
@@ -370,6 +387,7 @@ def format_word_block(tag_emoji, index, w):
     for ex in w.get("examples", []):
         lines.append(f"▪️ {esc(ex.get('de'))}")
         lines.append(f"   ↳ {esc(ex.get('en'))}")
+        lines.append(f"   🇹🇷 {esc(ex.get('tr'))}")
     return "\n".join(lines)
 
 
@@ -379,17 +397,20 @@ def format_grammar_tip(tip):
         lines.append(f"<i>{esc(tip['topic'])}</i>")
     lines.append("")
     lines.append(esc(tip.get("explanation", "")))
+    if tip.get("explanation_tr"):
+        lines.append(f"🇹🇷 {esc(tip['explanation_tr'])}")
     examples = tip.get("examples", [])
     if examples:
         lines.append("")
         for ex in examples:
             lines.append(f"▪️ {esc(ex.get('de'))}")
             lines.append(f"   ↳ {esc(ex.get('en'))}")
+            lines.append(f"   🇹🇷 {esc(ex.get('tr'))}")
     return "\n".join(lines)
 
 
 def build_messages(lesson):
-    header = "📚 <b>Deutsch des Tages — A2/B1</b>\n\n"
+    header = "📚 <b>Deutsch des Tages — A2/B1</b> 🇬🇧🇹🇷\n\n"
 
     sections = []
     for i, w in enumerate(lesson.get("new_words", []), 1):

@@ -2,7 +2,8 @@
 
 Sends a daily German (B1) reactivation lesson to a Telegram channel, generated
 by Claude Haiku — built for relearning German after a long gap, not learning
-from zero.
+from zero. Every word, usage note, word-family entry, example sentence, and
+grammar tip is translated into both English and Turkish.
 
 Each day: 3 new B1 words + 2 words due for spaced-repetition review (1 → 3 →
 7 → 16 → 35 → 90 day intervals), a rotating grammar tip from a 20-topic B1
