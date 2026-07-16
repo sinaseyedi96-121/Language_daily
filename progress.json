@@ -134,13 +134,15 @@
     },
     "Nachbar": {
       "first_seen": "2026-07-07",
-      "review_count": 0,
-      "next_review": "2026-07-08"
+      "review_count": 1,
+      "next_review": "2026-07-19",
+      "last_reviewed": "2026-07-16"
     },
     "Pflanze": {
       "first_seen": "2026-07-07",
-      "review_count": 0,
-      "next_review": "2026-07-08"
+      "review_count": 1,
+      "next_review": "2026-07-19",
+      "last_reviewed": "2026-07-16"
     },
     "Fahrkarte": {
       "first_seen": "2026-07-07",
@@ -431,7 +433,37 @@
       "first_seen": "2026-07-16",
       "review_count": 0,
       "next_review": "2026-07-17"
+    },
+    "Zucker": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "Brot": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "Milch": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "Besitzer": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "Licht": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
+    },
+    "sich trauen": {
+      "first_seen": "2026-07-16",
+      "review_count": 0,
+      "next_review": "2026-07-17"
     }
   },
-  "grammar_index": 13
+  "grammar_index": 14
 }
