@@ -146,13 +146,15 @@
     },
     "Fahrkarte": {
       "first_seen": "2026-07-07",
-      "review_count": 0,
-      "next_review": "2026-07-08"
+      "review_count": 1,
+      "next_review": "2026-07-20",
+      "last_reviewed": "2026-07-17"
     },
     "Vermieter": {
       "first_seen": "2026-07-07",
-      "review_count": 0,
-      "next_review": "2026-07-08"
+      "review_count": 1,
+      "next_review": "2026-07-20",
+      "last_reviewed": "2026-07-17"
     },
     "Auskunft": {
       "first_seen": "2026-07-07",
@@ -463,7 +465,42 @@
       "first_seen": "2026-07-16",
       "review_count": 0,
       "next_review": "2026-07-17"
+    },
+    "Geduld": {
+      "first_seen": "2026-07-17",
+      "review_count": 0,
+      "next_review": "2026-07-18"
+    },
+    "Zufall": {
+      "first_seen": "2026-07-17",
+      "review_count": 0,
+      "next_review": "2026-07-18"
+    },
+    "Nähe": {
+      "first_seen": "2026-07-17",
+      "review_count": 0,
+      "next_review": "2026-07-18"
+    },
+    "Feuer": {
+      "first_seen": "2026-07-17",
+      "review_count": 0,
+      "next_review": "2026-07-18"
+    },
+    "Gewalt": {
+      "first_seen": "2026-07-17",
+      "review_count": 0,
+      "next_review": "2026-07-18"
+    },
+    "Leihe": {
+      "first_seen": "2026-07-17",
+      "review_count": 0,
+      "next_review": "2026-07-18"
+    },
+    "sich bewähren": {
+      "first_seen": "2026-07-17",
+      "review_count": 0,
+      "next_review": "2026-07-18"
     }
   },
-  "grammar_index": 14
+  "grammar_index": 15
 }
