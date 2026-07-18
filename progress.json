@@ -158,13 +158,15 @@
     },
     "Auskunft": {
       "first_seen": "2026-07-07",
-      "review_count": 0,
-      "next_review": "2026-07-08"
+      "review_count": 1,
+      "next_review": "2026-07-21",
+      "last_reviewed": "2026-07-18"
     },
     "sich Gedanken machen": {
       "first_seen": "2026-07-07",
-      "review_count": 0,
-      "next_review": "2026-07-08"
+      "review_count": 1,
+      "next_review": "2026-07-21",
+      "last_reviewed": "2026-07-18"
     },
     "Hinweis": {
       "first_seen": "2026-07-08",
@@ -500,7 +502,42 @@
       "first_seen": "2026-07-17",
       "review_count": 0,
       "next_review": "2026-07-18"
+    },
+    "Wechsel": {
+      "first_seen": "2026-07-18",
+      "review_count": 0,
+      "next_review": "2026-07-19"
+    },
+    "Umstand": {
+      "first_seen": "2026-07-18",
+      "review_count": 0,
+      "next_review": "2026-07-19"
+    },
+    "Ausweis": {
+      "first_seen": "2026-07-18",
+      "review_count": 0,
+      "next_review": "2026-07-19"
+    },
+    "Haltstelle": {
+      "first_seen": "2026-07-18",
+      "review_count": 0,
+      "next_review": "2026-07-19"
+    },
+    "Begleiter": {
+      "first_seen": "2026-07-18",
+      "review_count": 0,
+      "next_review": "2026-07-19"
+    },
+    "Verzicht": {
+      "first_seen": "2026-07-18",
+      "review_count": 0,
+      "next_review": "2026-07-19"
+    },
+    "sich durchsetzen": {
+      "first_seen": "2026-07-18",
+      "review_count": 0,
+      "next_review": "2026-07-19"
     }
   },
-  "grammar_index": 15
+  "grammar_index": 16
 }
