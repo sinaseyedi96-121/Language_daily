@@ -14,15 +14,15 @@
     },
     "Schlüssel": {
       "first_seen": "2026-07-04",
-      "review_count": 1,
-      "next_review": "2026-07-09",
-      "last_reviewed": "2026-07-06"
+      "review_count": 2,
+      "next_review": "2026-07-26",
+      "last_reviewed": "2026-07-19"
     },
     "Anmeldung": {
       "first_seen": "2026-07-04",
-      "review_count": 1,
-      "next_review": "2026-07-09",
-      "last_reviewed": "2026-07-06"
+      "review_count": 2,
+      "next_review": "2026-07-26",
+      "last_reviewed": "2026-07-19"
     },
     "verschieben": {
       "first_seen": "2026-07-04",
@@ -537,7 +537,32 @@
       "first_seen": "2026-07-18",
       "review_count": 0,
       "next_review": "2026-07-19"
+    },
+    "Dose": {
+      "first_seen": "2026-07-19",
+      "review_count": 0,
+      "next_review": "2026-07-20"
+    },
+    "Deckel": {
+      "first_seen": "2026-07-19",
+      "review_count": 0,
+      "next_review": "2026-07-20"
+    },
+    "Schrank": {
+      "first_seen": "2026-07-19",
+      "review_count": 0,
+      "next_review": "2026-07-20"
+    },
+    "Eintrag": {
+      "first_seen": "2026-07-19",
+      "review_count": 0,
+      "next_review": "2026-07-20"
+    },
+    "Verbrauch": {
+      "first_seen": "2026-07-19",
+      "review_count": 0,
+      "next_review": "2026-07-20"
     }
   },
-  "grammar_index": 16
+  "grammar_index": 17
 }
