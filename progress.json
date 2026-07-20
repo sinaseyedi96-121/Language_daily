@@ -170,13 +170,15 @@
     },
     "Hinweis": {
       "first_seen": "2026-07-08",
-      "review_count": 0,
-      "next_review": "2026-07-09"
+      "review_count": 1,
+      "next_review": "2026-07-23",
+      "last_reviewed": "2026-07-20"
     },
     "Betrag": {
       "first_seen": "2026-07-08",
-      "review_count": 0,
-      "next_review": "2026-07-09"
+      "review_count": 1,
+      "next_review": "2026-07-23",
+      "last_reviewed": "2026-07-20"
     },
     "Lärm": {
       "first_seen": "2026-07-08",
@@ -562,7 +564,17 @@
       "first_seen": "2026-07-19",
       "review_count": 0,
       "next_review": "2026-07-20"
+    },
+    "Zugang": {
+      "first_seen": "2026-07-20",
+      "review_count": 0,
+      "next_review": "2026-07-21"
+    },
+    "Stelle": {
+      "first_seen": "2026-07-20",
+      "review_count": 0,
+      "next_review": "2026-07-21"
     }
   },
-  "grammar_index": 17
+  "grammar_index": 18
 }
