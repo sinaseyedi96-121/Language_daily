@@ -182,13 +182,15 @@
     },
     "Lärm": {
       "first_seen": "2026-07-08",
-      "review_count": 0,
-      "next_review": "2026-07-09"
+      "review_count": 1,
+      "next_review": "2026-07-24",
+      "last_reviewed": "2026-07-21"
     },
     "Besorgnis": {
       "first_seen": "2026-07-08",
-      "review_count": 0,
-      "next_review": "2026-07-09"
+      "review_count": 1,
+      "next_review": "2026-07-24",
+      "last_reviewed": "2026-07-21"
     },
     "Zeuge": {
       "first_seen": "2026-07-08",
@@ -576,5 +578,5 @@
       "next_review": "2026-07-21"
     }
   },
-  "grammar_index": 18
+  "grammar_index": 19
 }
