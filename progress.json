@@ -194,13 +194,15 @@
     },
     "Zeuge": {
       "first_seen": "2026-07-08",
-      "review_count": 0,
-      "next_review": "2026-07-09"
+      "review_count": 1,
+      "next_review": "2026-07-25",
+      "last_reviewed": "2026-07-22"
     },
     "Verzögerung": {
       "first_seen": "2026-07-08",
-      "review_count": 0,
-      "next_review": "2026-07-09"
+      "review_count": 1,
+      "next_review": "2026-07-25",
+      "last_reviewed": "2026-07-22"
     },
     "zuverlässig": {
       "first_seen": "2026-07-08",
@@ -576,7 +578,42 @@
       "first_seen": "2026-07-20",
       "review_count": 0,
       "next_review": "2026-07-21"
+    },
+    "Gast": {
+      "first_seen": "2026-07-22",
+      "review_count": 0,
+      "next_review": "2026-07-23"
+    },
+    "Wunsch": {
+      "first_seen": "2026-07-22",
+      "review_count": 0,
+      "next_review": "2026-07-23"
+    },
+    "Angst": {
+      "first_seen": "2026-07-22",
+      "review_count": 0,
+      "next_review": "2026-07-23"
+    },
+    "Fähigkeit": {
+      "first_seen": "2026-07-22",
+      "review_count": 0,
+      "next_review": "2026-07-23"
+    },
+    "Eigenschaft": {
+      "first_seen": "2026-07-22",
+      "review_count": 0,
+      "next_review": "2026-07-23"
+    },
+    "Gewohnheit": {
+      "first_seen": "2026-07-22",
+      "review_count": 0,
+      "next_review": "2026-07-23"
+    },
+    "sich konzentrieren": {
+      "first_seen": "2026-07-22",
+      "review_count": 0,
+      "next_review": "2026-07-23"
     }
   },
-  "grammar_index": 19
+  "grammar_index": 0
 }
