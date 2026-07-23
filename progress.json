@@ -26,9 +26,9 @@
     },
     "verschieben": {
       "first_seen": "2026-07-04",
-      "review_count": 1,
-      "next_review": "2026-07-10",
-      "last_reviewed": "2026-07-07"
+      "review_count": 2,
+      "next_review": "2026-07-30",
+      "last_reviewed": "2026-07-23"
     },
     "Umzug": {
       "first_seen": "2026-07-04",
@@ -206,8 +206,9 @@
     },
     "zuverlässig": {
       "first_seen": "2026-07-08",
-      "review_count": 0,
-      "next_review": "2026-07-09"
+      "review_count": 1,
+      "next_review": "2026-07-26",
+      "last_reviewed": "2026-07-23"
     },
     "Zutat": {
       "first_seen": "2026-07-10",
@@ -613,7 +614,32 @@
       "first_seen": "2026-07-22",
       "review_count": 0,
       "next_review": "2026-07-23"
+    },
+    "Einkaufen": {
+      "first_seen": "2026-07-23",
+      "review_count": 0,
+      "next_review": "2026-07-24"
+    },
+    "Wetter": {
+      "first_seen": "2026-07-23",
+      "review_count": 0,
+      "next_review": "2026-07-24"
+    },
+    "Haushalt": {
+      "first_seen": "2026-07-23",
+      "review_count": 0,
+      "next_review": "2026-07-24"
+    },
+    "Arbeitgeber": {
+      "first_seen": "2026-07-23",
+      "review_count": 0,
+      "next_review": "2026-07-24"
+    },
+    "Schicht": {
+      "first_seen": "2026-07-23",
+      "review_count": 0,
+      "next_review": "2026-07-24"
     }
   },
-  "grammar_index": 0
+  "grammar_index": 1
 }
