@@ -32,15 +32,15 @@
     },
     "Umzug": {
       "first_seen": "2026-07-04",
-      "review_count": 1,
-      "next_review": "2026-07-10",
-      "last_reviewed": "2026-07-07"
+      "review_count": 2,
+      "next_review": "2026-07-31",
+      "last_reviewed": "2026-07-24"
     },
     "sich gewöhnen an": {
       "first_seen": "2026-07-04",
-      "review_count": 1,
-      "next_review": "2026-07-11",
-      "last_reviewed": "2026-07-08"
+      "review_count": 2,
+      "next_review": "2026-07-31",
+      "last_reviewed": "2026-07-24"
     },
     "Verspätung": {
       "first_seen": "2026-07-05",
@@ -639,7 +639,22 @@
       "first_seen": "2026-07-23",
       "review_count": 0,
       "next_review": "2026-07-24"
+    },
+    "Wohnung": {
+      "first_seen": "2026-07-24",
+      "review_count": 0,
+      "next_review": "2026-07-25"
+    },
+    "Fenster": {
+      "first_seen": "2026-07-24",
+      "review_count": 0,
+      "next_review": "2026-07-25"
+    },
+    "Möbel": {
+      "first_seen": "2026-07-24",
+      "review_count": 0,
+      "next_review": "2026-07-25"
     }
   },
-  "grammar_index": 1
+  "grammar_index": 2
 }
