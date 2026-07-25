@@ -44,9 +44,9 @@
     },
     "Verspätung": {
       "first_seen": "2026-07-05",
-      "review_count": 1,
-      "next_review": "2026-07-11",
-      "last_reviewed": "2026-07-08"
+      "review_count": 2,
+      "next_review": "2026-08-01",
+      "last_reviewed": "2026-07-25"
     },
     "sich beeilen": {
       "first_seen": "2026-07-05",
@@ -212,8 +212,9 @@
     },
     "Zutat": {
       "first_seen": "2026-07-10",
-      "review_count": 0,
-      "next_review": "2026-07-11"
+      "review_count": 1,
+      "next_review": "2026-07-28",
+      "last_reviewed": "2026-07-25"
     },
     "Decke": {
       "first_seen": "2026-07-10",
@@ -656,5 +657,5 @@
       "next_review": "2026-07-25"
     }
   },
-  "grammar_index": 2
+  "grammar_index": 3
 }
