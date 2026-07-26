@@ -218,13 +218,15 @@
     },
     "Decke": {
       "first_seen": "2026-07-10",
-      "review_count": 0,
-      "next_review": "2026-07-11"
+      "review_count": 1,
+      "next_review": "2026-07-29",
+      "last_reviewed": "2026-07-26"
     },
     "Husten": {
       "first_seen": "2026-07-10",
-      "review_count": 0,
-      "next_review": "2026-07-11"
+      "review_count": 1,
+      "next_review": "2026-07-29",
+      "last_reviewed": "2026-07-26"
     },
     "Pünktlichkeit": {
       "first_seen": "2026-07-10",
@@ -655,7 +657,42 @@
       "first_seen": "2026-07-24",
       "review_count": 0,
       "next_review": "2026-07-25"
+    },
+    "Becher": {
+      "first_seen": "2026-07-26",
+      "review_count": 0,
+      "next_review": "2026-07-27"
+    },
+    "Serviette": {
+      "first_seen": "2026-07-26",
+      "review_count": 0,
+      "next_review": "2026-07-27"
+    },
+    "Besteck": {
+      "first_seen": "2026-07-26",
+      "review_count": 0,
+      "next_review": "2026-07-27"
+    },
+    "Lagerbestand": {
+      "first_seen": "2026-07-26",
+      "review_count": 0,
+      "next_review": "2026-07-27"
+    },
+    "Lieferkette": {
+      "first_seen": "2026-07-26",
+      "review_count": 0,
+      "next_review": "2026-07-27"
+    },
+    "Reklamation": {
+      "first_seen": "2026-07-26",
+      "review_count": 0,
+      "next_review": "2026-07-27"
+    },
+    "sich bewusstmachen": {
+      "first_seen": "2026-07-26",
+      "review_count": 0,
+      "next_review": "2026-07-27"
     }
   },
-  "grammar_index": 3
+  "grammar_index": 4
 }
