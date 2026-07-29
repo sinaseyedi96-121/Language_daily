@@ -50,15 +50,15 @@
     },
     "sich beeilen": {
       "first_seen": "2026-07-05",
-      "review_count": 1,
-      "next_review": "2026-07-12",
-      "last_reviewed": "2026-07-09"
+      "review_count": 2,
+      "next_review": "2026-08-05",
+      "last_reviewed": "2026-07-29"
     },
     "Rechnung": {
       "first_seen": "2026-07-05",
-      "review_count": 1,
-      "next_review": "2026-07-12",
-      "last_reviewed": "2026-07-09"
+      "review_count": 2,
+      "next_review": "2026-08-05",
+      "last_reviewed": "2026-07-29"
     },
     "Vertrag": {
       "first_seen": "2026-07-05",
@@ -746,7 +746,27 @@
       "first_seen": "2026-07-28",
       "review_count": 0,
       "next_review": "2026-07-29"
+    },
+    "Wecker": {
+      "first_seen": "2026-07-29",
+      "review_count": 0,
+      "next_review": "2026-07-30"
+    },
+    "Zahnbürste": {
+      "first_seen": "2026-07-29",
+      "review_count": 0,
+      "next_review": "2026-07-30"
+    },
+    "Kissen": {
+      "first_seen": "2026-07-29",
+      "review_count": 0,
+      "next_review": "2026-07-30"
+    },
+    "sich vorstellen": {
+      "first_seen": "2026-07-29",
+      "review_count": 0,
+      "next_review": "2026-07-30"
     }
   },
-  "grammar_index": 6
+  "grammar_index": 7
 }
