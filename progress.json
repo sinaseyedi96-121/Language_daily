@@ -254,13 +254,15 @@
     },
     "Paket": {
       "first_seen": "2026-07-11",
-      "review_count": 0,
-      "next_review": "2026-07-12"
+      "review_count": 1,
+      "next_review": "2026-08-02",
+      "last_reviewed": "2026-07-30"
     },
     "Handschuh": {
       "first_seen": "2026-07-11",
-      "review_count": 0,
-      "next_review": "2026-07-12"
+      "review_count": 1,
+      "next_review": "2026-08-02",
+      "last_reviewed": "2026-07-30"
     },
     "Zahnschmerz": {
       "first_seen": "2026-07-11",
@@ -766,7 +768,27 @@
       "first_seen": "2026-07-29",
       "review_count": 0,
       "next_review": "2026-07-30"
+    },
+    "Kuchen": {
+      "first_seen": "2026-07-30",
+      "review_count": 0,
+      "next_review": "2026-07-31"
+    },
+    "Apfel": {
+      "first_seen": "2026-07-30",
+      "review_count": 0,
+      "next_review": "2026-07-31"
+    },
+    "Käse": {
+      "first_seen": "2026-07-30",
+      "review_count": 0,
+      "next_review": "2026-07-31"
+    },
+    "Termin absagen": {
+      "first_seen": "2026-07-30",
+      "review_count": 0,
+      "next_review": "2026-07-31"
     }
   },
-  "grammar_index": 7
+  "grammar_index": 8
 }
