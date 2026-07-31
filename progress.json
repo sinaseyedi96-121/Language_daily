@@ -266,13 +266,15 @@
     },
     "Zahnschmerz": {
       "first_seen": "2026-07-11",
-      "review_count": 0,
-      "next_review": "2026-07-12"
+      "review_count": 1,
+      "next_review": "2026-08-03",
+      "last_reviewed": "2026-07-31"
     },
     "Frist": {
       "first_seen": "2026-07-11",
-      "review_count": 0,
-      "next_review": "2026-07-12"
+      "review_count": 1,
+      "next_review": "2026-08-03",
+      "last_reviewed": "2026-07-31"
     },
     "Schaden": {
       "first_seen": "2026-07-11",
@@ -788,7 +790,32 @@
       "first_seen": "2026-07-30",
       "review_count": 0,
       "next_review": "2026-07-31"
+    },
+    "Lohn": {
+      "first_seen": "2026-07-31",
+      "review_count": 0,
+      "next_review": "2026-08-01"
+    },
+    "Bild": {
+      "first_seen": "2026-07-31",
+      "review_count": 0,
+      "next_review": "2026-08-01"
+    },
+    "Tisch": {
+      "first_seen": "2026-07-31",
+      "review_count": 0,
+      "next_review": "2026-08-01"
+    },
+    "Ärger": {
+      "first_seen": "2026-07-31",
+      "review_count": 0,
+      "next_review": "2026-08-01"
+    },
+    "Abteilung": {
+      "first_seen": "2026-07-31",
+      "review_count": 0,
+      "next_review": "2026-08-01"
     }
   },
-  "grammar_index": 8
+  "grammar_index": 9
 }
