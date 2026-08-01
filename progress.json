@@ -278,13 +278,15 @@
     },
     "Schaden": {
       "first_seen": "2026-07-11",
-      "review_count": 0,
-      "next_review": "2026-07-12"
+      "review_count": 1,
+      "next_review": "2026-08-04",
+      "last_reviewed": "2026-08-01"
     },
     "Beratung": {
       "first_seen": "2026-07-11",
-      "review_count": 0,
-      "next_review": "2026-07-12"
+      "review_count": 1,
+      "next_review": "2026-08-04",
+      "last_reviewed": "2026-08-01"
     },
     "sich einigen": {
       "first_seen": "2026-07-11",
@@ -815,7 +817,32 @@
       "first_seen": "2026-07-31",
       "review_count": 0,
       "next_review": "2026-08-01"
+    },
+    "Heft": {
+      "first_seen": "2026-08-01",
+      "review_count": 0,
+      "next_review": "2026-08-02"
+    },
+    "Augenblick": {
+      "first_seen": "2026-08-01",
+      "review_count": 0,
+      "next_review": "2026-08-02"
+    },
+    "Eile": {
+      "first_seen": "2026-08-01",
+      "review_count": 0,
+      "next_review": "2026-08-02"
+    },
+    "Lust": {
+      "first_seen": "2026-08-01",
+      "review_count": 0,
+      "next_review": "2026-08-02"
+    },
+    "sich einlassen": {
+      "first_seen": "2026-08-01",
+      "review_count": 0,
+      "next_review": "2026-08-02"
     }
   },
-  "grammar_index": 9
+  "grammar_index": 10
 }
