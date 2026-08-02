@@ -13,6 +13,9 @@ Each day's message contains:
   - A few REVIEW words resurfacing on a spaced-repetition schedule
     (roughly 1 -> 3 -> 7 -> 16 -> 35 -> 90 days after each successful review).
   - One short grammar tip, cycling through a fixed B1 grammar curriculum.
+  - One voice note (Telegram sendVoice) with just the German text -- the
+    headwords and example sentences -- read aloud via Microsoft Edge TTS.
+    English and Turkish text is never spoken.
 
 State (which words exist, when they're next due, which grammar topic is
 next) lives in progress.json, which the GitHub Actions workflow commits
@@ -28,7 +31,9 @@ Run modes:
     python3 german_daily_bot.py            # local loop, sends daily at SEND_TIME
 
 Requirements:
-    pip3 install requests python-dotenv schedule
+    pip3 install requests python-dotenv schedule edge-tts
+    ffmpeg must also be installed and on PATH (used to convert the TTS
+    output into the ogg/opus format Telegram voice notes require).
 """
 
 import re
@@ -36,10 +41,14 @@ import os
 import json
 import html
 import time
+import asyncio
 import argparse
+import tempfile
+import subprocess
 from datetime import date, timedelta
 
 import requests
+import edge_tts
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -67,6 +76,11 @@ NEW_WORDS_PER_LEVEL = {
     "B2": 1,   # one small stretch word per day
 }
 REVIEW_PER_DAY_TARGET = 2   # review words on top of the new ones (when due)
+# ----------------------------------------------------------------------------
+
+# ---- VOICE (Microsoft Edge TTS) --------------------------------------------
+ENABLE_VOICE = True
+TTS_VOICE    = "de-DE-KatjaNeural"   # German neural voice, free via edge-tts
 # ----------------------------------------------------------------------------
 
 # Spaced-repetition intervals, in days, after the 1st/2nd/3rd/... successful
@@ -438,6 +452,62 @@ def build_messages(lesson):
 
 
 # --------------------------------------------------------------------------- #
+#  VOICE  ->  German-only text extracted from the lesson, spoken via Edge TTS
+# --------------------------------------------------------------------------- #
+def collect_german_script(lesson):
+    """Pull ONLY the German text out of a lesson (headwords + example
+    sentences) for the voice note. English and Turkish fields are skipped
+    entirely."""
+    lines = []
+
+    for w in lesson.get("new_words", []) + lesson.get("review_words", []):
+        headword = (w.get("german") or "").strip()
+        if not headword:
+            continue
+        article = (w.get("article") or "").strip() or None
+        if article and headword.lower().startswith(article.lower() + " "):
+            headword = headword[len(article) + 1:]
+        display = f"{article} {headword}" if article else headword
+        lines.append(f"{display}.")
+        for ex in w.get("examples", []):
+            de = (ex.get("de") or "").strip()
+            if de:
+                lines.append(de)
+
+    for ex in (lesson.get("grammar_tip") or {}).get("examples", []):
+        de = (ex.get("de") or "").strip()
+        if de:
+            lines.append(de)
+
+    return "\n".join(lines)
+
+
+async def _synthesize_mp3(text, mp3_path):
+    communicate = edge_tts.Communicate(text, voice=TTS_VOICE)
+    await communicate.save(mp3_path)
+
+
+def synthesize_german_voice(text):
+    """German text -> ogg/opus bytes (the format Telegram voice notes need),
+    via Edge TTS + ffmpeg."""
+    with tempfile.TemporaryDirectory() as tmp:
+        mp3_path = os.path.join(tmp, "voice.mp3")
+        ogg_path = os.path.join(tmp, "voice.ogg")
+
+        asyncio.run(_synthesize_mp3(text, mp3_path))
+
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", mp3_path,
+             "-c:a", "libopus", "-b:a", "48k", "-ar", "48000", "-ac", "1",
+             ogg_path],
+            check=True, capture_output=True,
+        )
+
+        with open(ogg_path, "rb") as f:
+            return f.read()
+
+
+# --------------------------------------------------------------------------- #
 #  TELEGRAM
 # --------------------------------------------------------------------------- #
 def send_telegram(text):
@@ -449,6 +519,15 @@ def send_telegram(text):
         "disable_web_page_preview": True,
     }
     resp = requests.post(url, json=payload, timeout=30)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def send_telegram_voice(ogg_bytes):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendVoice"
+    data = {"chat_id": TELEGRAM_CHAT_ID}
+    files = {"voice": ("lesson.ogg", ogg_bytes, "audio/ogg")}
+    resp = requests.post(url, data=data, files=files, timeout=60)
     resp.raise_for_status()
     return resp.json()
 
@@ -493,6 +572,19 @@ def run_once():
         send_telegram(msg)
         if i < len(messages) - 1:
             time.sleep(1)  # gentle pacing, avoids rate limits
+
+    if ENABLE_VOICE:
+        german_text = collect_german_script(lesson)
+        if german_text.strip():
+            print("Generating German voice note...")
+            try:
+                ogg_bytes = synthesize_german_voice(german_text)
+                send_telegram_voice(ogg_bytes)
+                print("Voice note sent.")
+            except Exception as e:
+                # Non-fatal: a TTS/ffmpeg hiccup shouldn't block the text
+                # lesson that already sent successfully.
+                print(f"Voice note failed, continuing without it: {e}")
 
     update_vocab_after_send(vocab, lesson.get("new_words", []), review_items, review_words)
     progress["grammar_index"] = (progress["grammar_index"] + 1) % len(GRAMMAR_TOPICS)

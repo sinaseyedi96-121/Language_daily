@@ -1,0 +1,14 @@
+# Secrets — never upload these
+.env
+
+# Python junk
+__pycache__/
+*.pyc
+.venv/
+
+# macOS junk
+.DS_Store
+
+# Generated audio (built fresh each run, not checked in)
+*.mp3
+*.ogg

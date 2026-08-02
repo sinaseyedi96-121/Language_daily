@@ -2,7 +2,7 @@ name: Daily German Vocab
 
 on:
   schedule:
-    # GitHub cron is ALWAYS in UTC. 06:00 UTC = 08:00 in Italy during summer (CEST).
+    # GitHub cron is ALWAYS in UTC. 06:00 UTC = 08:00 in Germany during summer (CEST).
     # In winter (CET, from late October) change this to '0 7 * * *' to keep 08:00 local.
     - cron: '0 6 * * *'
   workflow_dispatch:   # adds a "Run workflow" button so you can test manually anytime
@@ -21,6 +21,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
       - name: Install dependencies
         run: pip install -r requirements.txt
