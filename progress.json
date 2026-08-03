@@ -302,13 +302,15 @@
     },
     "Vorrat": {
       "first_seen": "2026-07-12",
-      "review_count": 0,
-      "next_review": "2026-07-13"
+      "review_count": 1,
+      "next_review": "2026-08-06",
+      "last_reviewed": "2026-08-03"
     },
     "Gewöhnung": {
       "first_seen": "2026-07-12",
-      "review_count": 0,
-      "next_review": "2026-07-13"
+      "review_count": 1,
+      "next_review": "2026-08-06",
+      "last_reviewed": "2026-08-03"
     },
     "Besuch": {
       "first_seen": "2026-07-12",
@@ -844,7 +846,17 @@
       "first_seen": "2026-08-01",
       "review_count": 0,
       "next_review": "2026-08-02"
+    },
+    "Hefte": {
+      "first_seen": "2026-08-03",
+      "review_count": 0,
+      "next_review": "2026-08-04"
+    },
+    "sich gewöhnen": {
+      "first_seen": "2026-08-03",
+      "review_count": 0,
+      "next_review": "2026-08-04"
     }
   },
-  "grammar_index": 12
+  "grammar_index": 13
 }
