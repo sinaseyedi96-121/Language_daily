@@ -314,13 +314,15 @@
     },
     "Besuch": {
       "first_seen": "2026-07-12",
-      "review_count": 0,
-      "next_review": "2026-07-13"
+      "review_count": 1,
+      "next_review": "2026-08-07",
+      "last_reviewed": "2026-08-04"
     },
     "Belastung": {
       "first_seen": "2026-07-12",
-      "review_count": 0,
-      "next_review": "2026-07-13"
+      "review_count": 1,
+      "next_review": "2026-08-07",
+      "last_reviewed": "2026-08-04"
     },
     "Regelung": {
       "first_seen": "2026-07-12",
@@ -856,7 +858,37 @@
       "first_seen": "2026-08-03",
       "review_count": 0,
       "next_review": "2026-08-04"
+    },
+    "Eimer": {
+      "first_seen": "2026-08-04",
+      "review_count": 0,
+      "next_review": "2026-08-05"
+    },
+    "Messer": {
+      "first_seen": "2026-08-04",
+      "review_count": 0,
+      "next_review": "2026-08-05"
+    },
+    "Gabel": {
+      "first_seen": "2026-08-04",
+      "review_count": 0,
+      "next_review": "2026-08-05"
+    },
+    "Lebensmittel": {
+      "first_seen": "2026-08-04",
+      "review_count": 0,
+      "next_review": "2026-08-05"
+    },
+    "Hindernis": {
+      "first_seen": "2026-08-04",
+      "review_count": 0,
+      "next_review": "2026-08-05"
+    },
+    "sich durchdenken": {
+      "first_seen": "2026-08-04",
+      "review_count": 0,
+      "next_review": "2026-08-05"
     }
   },
-  "grammar_index": 13
+  "grammar_index": 14
 }
