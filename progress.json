@@ -74,15 +74,15 @@
     },
     "Bewerbung": {
       "first_seen": "2026-07-05",
-      "review_count": 1,
-      "next_review": "2026-07-14",
-      "last_reviewed": "2026-07-11"
+      "review_count": 2,
+      "next_review": "2026-08-13",
+      "last_reviewed": "2026-08-06"
     },
     "ausgerechnet": {
       "first_seen": "2026-07-05",
-      "review_count": 1,
-      "next_review": "2026-07-14",
-      "last_reviewed": "2026-07-11"
+      "review_count": 2,
+      "next_review": "2026-08-13",
+      "last_reviewed": "2026-08-06"
     },
     "Geld": {
       "first_seen": "2026-07-06",
@@ -920,7 +920,37 @@
       "first_seen": "2026-08-05",
       "review_count": 0,
       "next_review": "2026-08-06"
+    },
+    "Zustellung": {
+      "first_seen": "2026-08-06",
+      "review_count": 0,
+      "next_review": "2026-08-07"
+    },
+    "Größe": {
+      "first_seen": "2026-08-06",
+      "review_count": 0,
+      "next_review": "2026-08-07"
+    },
+    "Schein": {
+      "first_seen": "2026-08-06",
+      "review_count": 0,
+      "next_review": "2026-08-07"
+    },
+    "Güterzug": {
+      "first_seen": "2026-08-06",
+      "review_count": 0,
+      "next_review": "2026-08-07"
+    },
+    "Auszug": {
+      "first_seen": "2026-08-06",
+      "review_count": 0,
+      "next_review": "2026-08-07"
+    },
+    "sich Gedanken machen über": {
+      "first_seen": "2026-08-06",
+      "review_count": 0,
+      "next_review": "2026-08-07"
     }
   },
-  "grammar_index": 15
+  "grammar_index": 16
 }
