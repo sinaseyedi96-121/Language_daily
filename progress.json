@@ -338,13 +338,15 @@
     },
     "Brille": {
       "first_seen": "2026-07-13",
-      "review_count": 0,
-      "next_review": "2026-07-14"
+      "review_count": 1,
+      "next_review": "2026-08-10",
+      "last_reviewed": "2026-08-07"
     },
     "Durst": {
       "first_seen": "2026-07-13",
-      "review_count": 0,
-      "next_review": "2026-07-14"
+      "review_count": 1,
+      "next_review": "2026-08-10",
+      "last_reviewed": "2026-08-07"
     },
     "Heizung": {
       "first_seen": "2026-07-13",
@@ -950,7 +952,22 @@
       "first_seen": "2026-08-06",
       "review_count": 0,
       "next_review": "2026-08-07"
+    },
+    "Bestellung": {
+      "first_seen": "2026-08-07",
+      "review_count": 0,
+      "next_review": "2026-08-08"
+    },
+    "Bedienung": {
+      "first_seen": "2026-08-07",
+      "review_count": 0,
+      "next_review": "2026-08-08"
+    },
+    "Haftung": {
+      "first_seen": "2026-08-07",
+      "review_count": 0,
+      "next_review": "2026-08-08"
     }
   },
-  "grammar_index": 16
+  "grammar_index": 17
 }
