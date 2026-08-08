@@ -350,13 +350,15 @@
     },
     "Heizung": {
       "first_seen": "2026-07-13",
-      "review_count": 0,
-      "next_review": "2026-07-14"
+      "review_count": 1,
+      "next_review": "2026-08-11",
+      "last_reviewed": "2026-08-08"
     },
     "Besorgung": {
       "first_seen": "2026-07-13",
-      "review_count": 0,
-      "next_review": "2026-07-14"
+      "review_count": 1,
+      "next_review": "2026-08-11",
+      "last_reviewed": "2026-08-08"
     },
     "Eintritt": {
       "first_seen": "2026-07-13",
@@ -967,7 +969,22 @@
       "first_seen": "2026-08-07",
       "review_count": 0,
       "next_review": "2026-08-08"
+    },
+    "Putz": {
+      "first_seen": "2026-08-08",
+      "review_count": 0,
+      "next_review": "2026-08-09"
+    },
+    "Nachbarschaft": {
+      "first_seen": "2026-08-08",
+      "review_count": 0,
+      "next_review": "2026-08-09"
+    },
+    "sich einleben": {
+      "first_seen": "2026-08-08",
+      "review_count": 0,
+      "next_review": "2026-08-09"
     }
   },
-  "grammar_index": 17
+  "grammar_index": 18
 }
