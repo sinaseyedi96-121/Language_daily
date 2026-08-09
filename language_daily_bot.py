@@ -221,6 +221,13 @@ PER-LANGUAGE conventions — apply to EVERY word you output (new, added, review)
 - English (en): the headword is English, so "english" must be a clear, plain-
   English DEFINITION (not a translation). Set "article"/"plural"/"reading" null.
 - For de/it/ja, "english" is the natural English meaning/translation.
+- The ADDED words I give may be written in their native script, in romanized/
+  Latin letters (e.g. Japanese "sumimasen"), OR given as an English meaning or
+  phrase (e.g. "excuse me"). In every case, produce the natural, correct word in
+  the language I tagged: put the proper written form in "word" (Japanese:
+  kanji/kana, with romaji in "reading"), never leaving it in Latin letters or as
+  the English phrase, and keep the language I tagged. If a meaning maps to more
+  than one common word, pick the single most natural everyday one.
 - Example sentences are pitched at {EXAMPLE_LEVEL} level in the word's OWN
   language: natural, complete sentences a fluent speaker would actually say,
   comfortable with subordinate clauses and everyday connectors — spoken
@@ -271,8 +278,10 @@ Rules:
 - Provide EXACTLY the number of NEW German words per level that I request, and
   order "new_words" so any added words I gave come as I listed them, then the
   generated German words easiest-first (A2, then B1, then B2).
-- For ADDED and REVIEW words, use the EXACT "word" and "language" I give — never
-  substitute a different word, translate the headword, or change its language.
+- REVIEW words: teach the EXACT "word" and "language" I give — never substitute,
+  translate, or change the language (these must match words I already know).
+- ADDED words: keep the language I tagged, but resolve the item to the natural
+  target word per the rule above (script / romaji / English meaning all allowed).
 - "family" lists 2-4 genuinely common derivations from the same root, or [].
 - "synonyms" lists 2-3 real, common same-language substitutes, or [].
 - Never invent a weak synonym or family entry just to fill a quota.
@@ -296,8 +305,9 @@ def build_user_message(german_counts, added_words, review_words, known_words, gr
     if added_words:
         listed = ", ".join(f"{w['word']} ({LANG_NAMES.get(w['language'], w['language'])})" for w in added_words)
         parts.append(
-            "Teach these specific words I added myself — keep each word and its "
-            "language EXACTLY as given, and put them first in \"new_words\": " + listed
+            "Teach these specific words I added myself (keep the language I tagged; "
+            "each item may be the word, its romaji, or an English meaning — teach "
+            "the natural target-language word). Put them first in \"new_words\": " + listed
         )
 
     if review_words:
