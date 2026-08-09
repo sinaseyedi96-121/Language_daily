@@ -1,11 +1,11 @@
-name: Daily German Vocab
+name: Daily Language Vocab
 
 on:
   schedule:
     # GitHub cron is ALWAYS in UTC. 06:00 UTC = 08:00 in Germany during summer (CEST).
     # In winter (CET, from late October) change this to '0 7 * * *' to keep 08:00 local.
     - cron: '0 6 * * *'
-  workflow_dispatch:   # adds a "Run workflow" button so you can test manually anytime
+  workflow_dispatch:   # "Run workflow" button — also ingests words you've DM'd, on demand
 
 permissions:
   contents: write      # needed so the job can commit progress.json back to the repo
@@ -28,12 +28,15 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Send daily German lesson
+      - name: Send daily language lesson
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python german_daily_bot.py --once
+          # Optional: override the single Telegram user allowed to add words.
+          # Defaults to the value baked into language_daily_bot.py if unset.
+          TELEGRAM_ALLOWED_USER_ID: ${{ secrets.TELEGRAM_ALLOWED_USER_ID }}
+        run: python language_daily_bot.py --once
 
       - name: Save updated progress.json
         run: |
