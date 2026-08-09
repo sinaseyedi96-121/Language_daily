@@ -4,987 +4,1182 @@
       "first_seen": "2026-07-04",
       "review_count": 2,
       "next_review": "2026-07-22",
-      "last_reviewed": "2026-07-15"
+      "last_reviewed": "2026-07-15",
+      "language": "de"
     },
     "abholen": {
       "first_seen": "2026-07-04",
       "review_count": 2,
       "next_review": "2026-07-23",
-      "last_reviewed": "2026-07-16"
+      "last_reviewed": "2026-07-16",
+      "language": "de"
     },
     "Schlüssel": {
       "first_seen": "2026-07-04",
       "review_count": 2,
       "next_review": "2026-07-26",
-      "last_reviewed": "2026-07-19"
+      "last_reviewed": "2026-07-19",
+      "language": "de"
     },
     "Anmeldung": {
       "first_seen": "2026-07-04",
       "review_count": 2,
       "next_review": "2026-07-26",
-      "last_reviewed": "2026-07-19"
+      "last_reviewed": "2026-07-19",
+      "language": "de"
     },
     "verschieben": {
       "first_seen": "2026-07-04",
       "review_count": 2,
       "next_review": "2026-07-30",
-      "last_reviewed": "2026-07-23"
+      "last_reviewed": "2026-07-23",
+      "language": "de"
     },
     "Umzug": {
       "first_seen": "2026-07-04",
       "review_count": 2,
       "next_review": "2026-07-31",
-      "last_reviewed": "2026-07-24"
+      "last_reviewed": "2026-07-24",
+      "language": "de"
     },
     "sich gewöhnen an": {
       "first_seen": "2026-07-04",
       "review_count": 2,
       "next_review": "2026-07-31",
-      "last_reviewed": "2026-07-24"
+      "last_reviewed": "2026-07-24",
+      "language": "de"
     },
     "Verspätung": {
       "first_seen": "2026-07-05",
       "review_count": 2,
       "next_review": "2026-08-01",
-      "last_reviewed": "2026-07-25"
+      "last_reviewed": "2026-07-25",
+      "language": "de"
     },
     "sich beeilen": {
       "first_seen": "2026-07-05",
       "review_count": 2,
       "next_review": "2026-08-05",
-      "last_reviewed": "2026-07-29"
+      "last_reviewed": "2026-07-29",
+      "language": "de"
     },
     "Rechnung": {
       "first_seen": "2026-07-05",
       "review_count": 2,
       "next_review": "2026-08-05",
-      "last_reviewed": "2026-07-29"
+      "last_reviewed": "2026-07-29",
+      "language": "de"
     },
     "Vertrag": {
       "first_seen": "2026-07-05",
       "review_count": 2,
       "next_review": "2026-08-09",
-      "last_reviewed": "2026-08-02"
+      "last_reviewed": "2026-08-02",
+      "language": "de"
     },
     "sich erkundigen": {
       "first_seen": "2026-07-05",
       "review_count": 2,
       "next_review": "2026-08-09",
-      "last_reviewed": "2026-08-02"
+      "last_reviewed": "2026-08-02",
+      "language": "de"
     },
     "Bewerbung": {
       "first_seen": "2026-07-05",
       "review_count": 2,
       "next_review": "2026-08-13",
-      "last_reviewed": "2026-08-06"
+      "last_reviewed": "2026-08-06",
+      "language": "de"
     },
     "ausgerechnet": {
       "first_seen": "2026-07-05",
       "review_count": 2,
       "next_review": "2026-08-13",
-      "last_reviewed": "2026-08-06"
+      "last_reviewed": "2026-08-06",
+      "language": "de"
     },
     "Geld": {
       "first_seen": "2026-07-06",
       "review_count": 1,
       "next_review": "2026-07-15",
-      "last_reviewed": "2026-07-12"
+      "last_reviewed": "2026-07-12",
+      "language": "de"
     },
     "Lage": {
       "first_seen": "2026-07-06",
       "review_count": 1,
       "next_review": "2026-07-15",
-      "last_reviewed": "2026-07-12"
+      "last_reviewed": "2026-07-12",
+      "language": "de"
     },
     "Tasse": {
       "first_seen": "2026-07-06",
       "review_count": 1,
       "next_review": "2026-07-16",
-      "last_reviewed": "2026-07-13"
+      "last_reviewed": "2026-07-13",
+      "language": "de"
     },
     "Grund": {
       "first_seen": "2026-07-06",
       "review_count": 1,
       "next_review": "2026-07-16",
-      "last_reviewed": "2026-07-13"
+      "last_reviewed": "2026-07-13",
+      "language": "de"
     },
     "Pflicht": {
       "first_seen": "2026-07-06",
       "review_count": 1,
       "next_review": "2026-07-17",
-      "last_reviewed": "2026-07-14"
+      "last_reviewed": "2026-07-14",
+      "language": "de"
     },
     "Lücke": {
       "first_seen": "2026-07-06",
       "review_count": 1,
       "next_review": "2026-07-17",
-      "last_reviewed": "2026-07-14"
+      "last_reviewed": "2026-07-14",
+      "language": "de"
     },
     "sich ärgern": {
       "first_seen": "2026-07-06",
       "review_count": 1,
       "next_review": "2026-07-18",
-      "last_reviewed": "2026-07-15"
+      "last_reviewed": "2026-07-15",
+      "language": "de"
     },
     "Gepäck": {
       "first_seen": "2026-07-07",
       "review_count": 1,
       "next_review": "2026-07-19",
-      "last_reviewed": "2026-07-16"
+      "last_reviewed": "2026-07-16",
+      "language": "de"
     },
     "Nachbar": {
       "first_seen": "2026-07-07",
       "review_count": 1,
       "next_review": "2026-07-19",
-      "last_reviewed": "2026-07-16"
+      "last_reviewed": "2026-07-16",
+      "language": "de"
     },
     "Pflanze": {
       "first_seen": "2026-07-07",
       "review_count": 1,
       "next_review": "2026-07-19",
-      "last_reviewed": "2026-07-16"
+      "last_reviewed": "2026-07-16",
+      "language": "de"
     },
     "Fahrkarte": {
       "first_seen": "2026-07-07",
       "review_count": 1,
       "next_review": "2026-07-20",
-      "last_reviewed": "2026-07-17"
+      "last_reviewed": "2026-07-17",
+      "language": "de"
     },
     "Vermieter": {
       "first_seen": "2026-07-07",
       "review_count": 1,
       "next_review": "2026-07-20",
-      "last_reviewed": "2026-07-17"
+      "last_reviewed": "2026-07-17",
+      "language": "de"
     },
     "Auskunft": {
       "first_seen": "2026-07-07",
       "review_count": 1,
       "next_review": "2026-07-21",
-      "last_reviewed": "2026-07-18"
+      "last_reviewed": "2026-07-18",
+      "language": "de"
     },
     "sich Gedanken machen": {
       "first_seen": "2026-07-07",
       "review_count": 1,
       "next_review": "2026-07-21",
-      "last_reviewed": "2026-07-18"
+      "last_reviewed": "2026-07-18",
+      "language": "de"
     },
     "Hinweis": {
       "first_seen": "2026-07-08",
       "review_count": 1,
       "next_review": "2026-07-23",
-      "last_reviewed": "2026-07-20"
+      "last_reviewed": "2026-07-20",
+      "language": "de"
     },
     "Betrag": {
       "first_seen": "2026-07-08",
       "review_count": 1,
       "next_review": "2026-07-23",
-      "last_reviewed": "2026-07-20"
+      "last_reviewed": "2026-07-20",
+      "language": "de"
     },
     "Lärm": {
       "first_seen": "2026-07-08",
       "review_count": 1,
       "next_review": "2026-07-24",
-      "last_reviewed": "2026-07-21"
+      "last_reviewed": "2026-07-21",
+      "language": "de"
     },
     "Besorgnis": {
       "first_seen": "2026-07-08",
       "review_count": 1,
       "next_review": "2026-07-24",
-      "last_reviewed": "2026-07-21"
+      "last_reviewed": "2026-07-21",
+      "language": "de"
     },
     "Zeuge": {
       "first_seen": "2026-07-08",
       "review_count": 1,
       "next_review": "2026-07-25",
-      "last_reviewed": "2026-07-22"
+      "last_reviewed": "2026-07-22",
+      "language": "de"
     },
     "Verzögerung": {
       "first_seen": "2026-07-08",
       "review_count": 1,
       "next_review": "2026-07-25",
-      "last_reviewed": "2026-07-22"
+      "last_reviewed": "2026-07-22",
+      "language": "de"
     },
     "zuverlässig": {
       "first_seen": "2026-07-08",
       "review_count": 1,
       "next_review": "2026-07-26",
-      "last_reviewed": "2026-07-23"
+      "last_reviewed": "2026-07-23",
+      "language": "de"
     },
     "Zutat": {
       "first_seen": "2026-07-10",
       "review_count": 1,
       "next_review": "2026-07-28",
-      "last_reviewed": "2026-07-25"
+      "last_reviewed": "2026-07-25",
+      "language": "de"
     },
     "Decke": {
       "first_seen": "2026-07-10",
       "review_count": 1,
       "next_review": "2026-07-29",
-      "last_reviewed": "2026-07-26"
+      "last_reviewed": "2026-07-26",
+      "language": "de"
     },
     "Husten": {
       "first_seen": "2026-07-10",
       "review_count": 1,
       "next_review": "2026-07-29",
-      "last_reviewed": "2026-07-26"
+      "last_reviewed": "2026-07-26",
+      "language": "de"
     },
     "Pünktlichkeit": {
       "first_seen": "2026-07-10",
       "review_count": 1,
       "next_review": "2026-07-30",
-      "last_reviewed": "2026-07-27"
+      "last_reviewed": "2026-07-27",
+      "language": "de"
     },
     "Beschwerde": {
       "first_seen": "2026-07-10",
       "review_count": 1,
       "next_review": "2026-07-30",
-      "last_reviewed": "2026-07-27"
+      "last_reviewed": "2026-07-27",
+      "language": "de"
     },
     "Rückgabe": {
       "first_seen": "2026-07-10",
       "review_count": 1,
       "next_review": "2026-07-31",
-      "last_reviewed": "2026-07-28"
+      "last_reviewed": "2026-07-28",
+      "language": "de"
     },
     "sich verspäten": {
       "first_seen": "2026-07-10",
       "review_count": 1,
       "next_review": "2026-07-31",
-      "last_reviewed": "2026-07-28"
+      "last_reviewed": "2026-07-28",
+      "language": "de"
     },
     "Paket": {
       "first_seen": "2026-07-11",
       "review_count": 1,
       "next_review": "2026-08-02",
-      "last_reviewed": "2026-07-30"
+      "last_reviewed": "2026-07-30",
+      "language": "de"
     },
     "Handschuh": {
       "first_seen": "2026-07-11",
       "review_count": 1,
       "next_review": "2026-08-02",
-      "last_reviewed": "2026-07-30"
+      "last_reviewed": "2026-07-30",
+      "language": "de"
     },
     "Zahnschmerz": {
       "first_seen": "2026-07-11",
       "review_count": 1,
       "next_review": "2026-08-03",
-      "last_reviewed": "2026-07-31"
+      "last_reviewed": "2026-07-31",
+      "language": "de"
     },
     "Frist": {
       "first_seen": "2026-07-11",
       "review_count": 1,
       "next_review": "2026-08-03",
-      "last_reviewed": "2026-07-31"
+      "last_reviewed": "2026-07-31",
+      "language": "de"
     },
     "Schaden": {
       "first_seen": "2026-07-11",
       "review_count": 1,
       "next_review": "2026-08-04",
-      "last_reviewed": "2026-08-01"
+      "last_reviewed": "2026-08-01",
+      "language": "de"
     },
     "Beratung": {
       "first_seen": "2026-07-11",
       "review_count": 1,
       "next_review": "2026-08-04",
-      "last_reviewed": "2026-08-01"
+      "last_reviewed": "2026-08-01",
+      "language": "de"
     },
     "sich einigen": {
       "first_seen": "2026-07-11",
       "review_count": 1,
       "next_review": "2026-08-05",
-      "last_reviewed": "2026-08-02"
+      "last_reviewed": "2026-08-02",
+      "language": "de"
     },
     "Öffnungszeit": {
       "first_seen": "2026-07-12",
       "review_count": 1,
       "next_review": "2026-08-05",
-      "last_reviewed": "2026-08-02"
+      "last_reviewed": "2026-08-02",
+      "language": "de"
     },
     "Vorrat": {
       "first_seen": "2026-07-12",
       "review_count": 1,
       "next_review": "2026-08-06",
-      "last_reviewed": "2026-08-03"
+      "last_reviewed": "2026-08-03",
+      "language": "de"
     },
     "Gewöhnung": {
       "first_seen": "2026-07-12",
       "review_count": 1,
       "next_review": "2026-08-06",
-      "last_reviewed": "2026-08-03"
+      "last_reviewed": "2026-08-03",
+      "language": "de"
     },
     "Besuch": {
       "first_seen": "2026-07-12",
       "review_count": 1,
       "next_review": "2026-08-07",
-      "last_reviewed": "2026-08-04"
+      "last_reviewed": "2026-08-04",
+      "language": "de"
     },
     "Belastung": {
       "first_seen": "2026-07-12",
       "review_count": 1,
       "next_review": "2026-08-07",
-      "last_reviewed": "2026-08-04"
+      "last_reviewed": "2026-08-04",
+      "language": "de"
     },
     "Regelung": {
       "first_seen": "2026-07-12",
       "review_count": 1,
       "next_review": "2026-08-08",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "language": "de"
     },
     "sich herausstellen": {
       "first_seen": "2026-07-12",
       "review_count": 1,
       "next_review": "2026-08-08",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "language": "de"
     },
     "Brille": {
       "first_seen": "2026-07-13",
       "review_count": 1,
       "next_review": "2026-08-10",
-      "last_reviewed": "2026-08-07"
+      "last_reviewed": "2026-08-07",
+      "language": "de"
     },
     "Durst": {
       "first_seen": "2026-07-13",
       "review_count": 1,
       "next_review": "2026-08-10",
-      "last_reviewed": "2026-08-07"
+      "last_reviewed": "2026-08-07",
+      "language": "de"
     },
     "Heizung": {
       "first_seen": "2026-07-13",
       "review_count": 1,
       "next_review": "2026-08-11",
-      "last_reviewed": "2026-08-08"
+      "last_reviewed": "2026-08-08",
+      "language": "de"
     },
     "Besorgung": {
       "first_seen": "2026-07-13",
       "review_count": 1,
       "next_review": "2026-08-11",
-      "last_reviewed": "2026-08-08"
+      "last_reviewed": "2026-08-08",
+      "language": "de"
     },
     "Eintritt": {
       "first_seen": "2026-07-13",
-      "review_count": 0,
-      "next_review": "2026-07-14"
+      "review_count": 1,
+      "next_review": "2026-08-12",
+      "language": "de",
+      "last_reviewed": "2026-08-09"
     },
     "Lagerung": {
       "first_seen": "2026-07-13",
-      "review_count": 0,
-      "next_review": "2026-07-14"
+      "review_count": 1,
+      "next_review": "2026-08-12",
+      "language": "de",
+      "last_reviewed": "2026-08-09"
     },
     "sich leisten": {
       "first_seen": "2026-07-13",
       "review_count": 0,
-      "next_review": "2026-07-14"
+      "next_review": "2026-07-14",
+      "language": "de"
     },
     "Fahrstuhl": {
       "first_seen": "2026-07-14",
       "review_count": 0,
-      "next_review": "2026-07-15"
+      "next_review": "2026-07-15",
+      "language": "de"
     },
     "Bahnhof": {
       "first_seen": "2026-07-14",
       "review_count": 0,
-      "next_review": "2026-07-15"
+      "next_review": "2026-07-15",
+      "language": "de"
     },
     "Gepäckaufbewahrung": {
       "first_seen": "2026-07-14",
       "review_count": 0,
-      "next_review": "2026-07-15"
+      "next_review": "2026-07-15",
+      "language": "de"
     },
     "Makler": {
       "first_seen": "2026-07-14",
       "review_count": 0,
-      "next_review": "2026-07-15"
+      "next_review": "2026-07-15",
+      "language": "de"
     },
     "Kaution": {
       "first_seen": "2026-07-14",
       "review_count": 0,
-      "next_review": "2026-07-15"
+      "next_review": "2026-07-15",
+      "language": "de"
     },
     "Besichtigung": {
       "first_seen": "2026-07-14",
       "review_count": 0,
-      "next_review": "2026-07-15"
+      "next_review": "2026-07-15",
+      "language": "de"
     },
     "Voraussetzung": {
       "first_seen": "2026-07-14",
       "review_count": 0,
-      "next_review": "2026-07-15"
+      "next_review": "2026-07-15",
+      "language": "de"
     },
     "Strom": {
       "first_seen": "2026-07-15",
       "review_count": 0,
-      "next_review": "2026-07-16"
+      "next_review": "2026-07-16",
+      "language": "de"
     },
     "Wasser": {
       "first_seen": "2026-07-15",
       "review_count": 0,
-      "next_review": "2026-07-16"
+      "next_review": "2026-07-16",
+      "language": "de"
     },
     "Miete": {
       "first_seen": "2026-07-15",
       "review_count": 0,
-      "next_review": "2026-07-16"
+      "next_review": "2026-07-16",
+      "language": "de"
     },
     "Nebenkosten": {
       "first_seen": "2026-07-15",
       "review_count": 0,
-      "next_review": "2026-07-16"
+      "next_review": "2026-07-16",
+      "language": "de"
     },
     "sich auskennen": {
       "first_seen": "2026-07-15",
       "review_count": 0,
-      "next_review": "2026-07-16"
+      "next_review": "2026-07-16",
+      "language": "de"
     },
     "Öl": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Handtuch": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Feuchtigkeit": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Lüftung": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Schimmel": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Insekt": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "sich beschweren": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Zucker": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Brot": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Milch": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Besitzer": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Licht": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "sich trauen": {
       "first_seen": "2026-07-16",
       "review_count": 0,
-      "next_review": "2026-07-17"
+      "next_review": "2026-07-17",
+      "language": "de"
     },
     "Geduld": {
       "first_seen": "2026-07-17",
       "review_count": 0,
-      "next_review": "2026-07-18"
+      "next_review": "2026-07-18",
+      "language": "de"
     },
     "Zufall": {
       "first_seen": "2026-07-17",
       "review_count": 0,
-      "next_review": "2026-07-18"
+      "next_review": "2026-07-18",
+      "language": "de"
     },
     "Nähe": {
       "first_seen": "2026-07-17",
       "review_count": 0,
-      "next_review": "2026-07-18"
+      "next_review": "2026-07-18",
+      "language": "de"
     },
     "Feuer": {
       "first_seen": "2026-07-17",
       "review_count": 0,
-      "next_review": "2026-07-18"
+      "next_review": "2026-07-18",
+      "language": "de"
     },
     "Gewalt": {
       "first_seen": "2026-07-17",
       "review_count": 0,
-      "next_review": "2026-07-18"
+      "next_review": "2026-07-18",
+      "language": "de"
     },
     "Leihe": {
       "first_seen": "2026-07-17",
       "review_count": 0,
-      "next_review": "2026-07-18"
+      "next_review": "2026-07-18",
+      "language": "de"
     },
     "sich bewähren": {
       "first_seen": "2026-07-17",
       "review_count": 0,
-      "next_review": "2026-07-18"
+      "next_review": "2026-07-18",
+      "language": "de"
     },
     "Wechsel": {
       "first_seen": "2026-07-18",
       "review_count": 0,
-      "next_review": "2026-07-19"
+      "next_review": "2026-07-19",
+      "language": "de"
     },
     "Umstand": {
       "first_seen": "2026-07-18",
       "review_count": 0,
-      "next_review": "2026-07-19"
+      "next_review": "2026-07-19",
+      "language": "de"
     },
     "Ausweis": {
       "first_seen": "2026-07-18",
       "review_count": 0,
-      "next_review": "2026-07-19"
+      "next_review": "2026-07-19",
+      "language": "de"
     },
     "Haltstelle": {
       "first_seen": "2026-07-18",
       "review_count": 0,
-      "next_review": "2026-07-19"
+      "next_review": "2026-07-19",
+      "language": "de"
     },
     "Begleiter": {
       "first_seen": "2026-07-18",
       "review_count": 0,
-      "next_review": "2026-07-19"
+      "next_review": "2026-07-19",
+      "language": "de"
     },
     "Verzicht": {
       "first_seen": "2026-07-18",
       "review_count": 0,
-      "next_review": "2026-07-19"
+      "next_review": "2026-07-19",
+      "language": "de"
     },
     "sich durchsetzen": {
       "first_seen": "2026-07-18",
       "review_count": 0,
-      "next_review": "2026-07-19"
+      "next_review": "2026-07-19",
+      "language": "de"
     },
     "Dose": {
       "first_seen": "2026-07-19",
       "review_count": 0,
-      "next_review": "2026-07-20"
+      "next_review": "2026-07-20",
+      "language": "de"
     },
     "Deckel": {
       "first_seen": "2026-07-19",
       "review_count": 0,
-      "next_review": "2026-07-20"
+      "next_review": "2026-07-20",
+      "language": "de"
     },
     "Schrank": {
       "first_seen": "2026-07-19",
       "review_count": 0,
-      "next_review": "2026-07-20"
+      "next_review": "2026-07-20",
+      "language": "de"
     },
     "Eintrag": {
       "first_seen": "2026-07-19",
       "review_count": 0,
-      "next_review": "2026-07-20"
+      "next_review": "2026-07-20",
+      "language": "de"
     },
     "Verbrauch": {
       "first_seen": "2026-07-19",
       "review_count": 0,
-      "next_review": "2026-07-20"
+      "next_review": "2026-07-20",
+      "language": "de"
     },
     "Zugang": {
       "first_seen": "2026-07-20",
       "review_count": 0,
-      "next_review": "2026-07-21"
+      "next_review": "2026-07-21",
+      "language": "de"
     },
     "Stelle": {
       "first_seen": "2026-07-20",
       "review_count": 0,
-      "next_review": "2026-07-21"
+      "next_review": "2026-07-21",
+      "language": "de"
     },
     "Gast": {
       "first_seen": "2026-07-22",
       "review_count": 0,
-      "next_review": "2026-07-23"
+      "next_review": "2026-07-23",
+      "language": "de"
     },
     "Wunsch": {
       "first_seen": "2026-07-22",
       "review_count": 0,
-      "next_review": "2026-07-23"
+      "next_review": "2026-07-23",
+      "language": "de"
     },
     "Angst": {
       "first_seen": "2026-07-22",
       "review_count": 0,
-      "next_review": "2026-07-23"
+      "next_review": "2026-07-23",
+      "language": "de"
     },
     "Fähigkeit": {
       "first_seen": "2026-07-22",
       "review_count": 0,
-      "next_review": "2026-07-23"
+      "next_review": "2026-07-23",
+      "language": "de"
     },
     "Eigenschaft": {
       "first_seen": "2026-07-22",
       "review_count": 0,
-      "next_review": "2026-07-23"
+      "next_review": "2026-07-23",
+      "language": "de"
     },
     "Gewohnheit": {
       "first_seen": "2026-07-22",
       "review_count": 0,
-      "next_review": "2026-07-23"
+      "next_review": "2026-07-23",
+      "language": "de"
     },
     "sich konzentrieren": {
       "first_seen": "2026-07-22",
       "review_count": 0,
-      "next_review": "2026-07-23"
+      "next_review": "2026-07-23",
+      "language": "de"
     },
     "Einkaufen": {
       "first_seen": "2026-07-23",
       "review_count": 0,
-      "next_review": "2026-07-24"
+      "next_review": "2026-07-24",
+      "language": "de"
     },
     "Wetter": {
       "first_seen": "2026-07-23",
       "review_count": 0,
-      "next_review": "2026-07-24"
+      "next_review": "2026-07-24",
+      "language": "de"
     },
     "Haushalt": {
       "first_seen": "2026-07-23",
       "review_count": 0,
-      "next_review": "2026-07-24"
+      "next_review": "2026-07-24",
+      "language": "de"
     },
     "Arbeitgeber": {
       "first_seen": "2026-07-23",
       "review_count": 0,
-      "next_review": "2026-07-24"
+      "next_review": "2026-07-24",
+      "language": "de"
     },
     "Schicht": {
       "first_seen": "2026-07-23",
       "review_count": 0,
-      "next_review": "2026-07-24"
+      "next_review": "2026-07-24",
+      "language": "de"
     },
     "Wohnung": {
       "first_seen": "2026-07-24",
       "review_count": 0,
-      "next_review": "2026-07-25"
+      "next_review": "2026-07-25",
+      "language": "de"
     },
     "Fenster": {
       "first_seen": "2026-07-24",
       "review_count": 0,
-      "next_review": "2026-07-25"
+      "next_review": "2026-07-25",
+      "language": "de"
     },
     "Möbel": {
       "first_seen": "2026-07-24",
       "review_count": 0,
-      "next_review": "2026-07-25"
+      "next_review": "2026-07-25",
+      "language": "de"
     },
     "Becher": {
       "first_seen": "2026-07-26",
       "review_count": 0,
-      "next_review": "2026-07-27"
+      "next_review": "2026-07-27",
+      "language": "de"
     },
     "Serviette": {
       "first_seen": "2026-07-26",
       "review_count": 0,
-      "next_review": "2026-07-27"
+      "next_review": "2026-07-27",
+      "language": "de"
     },
     "Besteck": {
       "first_seen": "2026-07-26",
       "review_count": 0,
-      "next_review": "2026-07-27"
+      "next_review": "2026-07-27",
+      "language": "de"
     },
     "Lagerbestand": {
       "first_seen": "2026-07-26",
       "review_count": 0,
-      "next_review": "2026-07-27"
+      "next_review": "2026-07-27",
+      "language": "de"
     },
     "Lieferkette": {
       "first_seen": "2026-07-26",
       "review_count": 0,
-      "next_review": "2026-07-27"
+      "next_review": "2026-07-27",
+      "language": "de"
     },
     "Reklamation": {
       "first_seen": "2026-07-26",
       "review_count": 0,
-      "next_review": "2026-07-27"
+      "next_review": "2026-07-27",
+      "language": "de"
     },
     "sich bewusstmachen": {
       "first_seen": "2026-07-26",
       "review_count": 0,
-      "next_review": "2026-07-27"
+      "next_review": "2026-07-27",
+      "language": "de"
     },
     "Notiz": {
       "first_seen": "2026-07-27",
       "review_count": 0,
-      "next_review": "2026-07-28"
+      "next_review": "2026-07-28",
+      "language": "de"
     },
     "Angebot": {
       "first_seen": "2026-07-27",
       "review_count": 0,
-      "next_review": "2026-07-28"
+      "next_review": "2026-07-28",
+      "language": "de"
     },
     "Vermerk": {
       "first_seen": "2026-07-27",
       "review_count": 0,
-      "next_review": "2026-07-28"
+      "next_review": "2026-07-28",
+      "language": "de"
     },
     "Glas": {
       "first_seen": "2026-07-28",
       "review_count": 0,
-      "next_review": "2026-07-29"
+      "next_review": "2026-07-29",
+      "language": "de"
     },
     "Löffel": {
       "first_seen": "2026-07-28",
       "review_count": 0,
-      "next_review": "2026-07-29"
+      "next_review": "2026-07-29",
+      "language": "de"
     },
     "Dusche": {
       "first_seen": "2026-07-28",
       "review_count": 0,
-      "next_review": "2026-07-29"
+      "next_review": "2026-07-29",
+      "language": "de"
     },
     "Hose": {
       "first_seen": "2026-07-28",
       "review_count": 0,
-      "next_review": "2026-07-29"
+      "next_review": "2026-07-29",
+      "language": "de"
     },
     "Verzierung": {
       "first_seen": "2026-07-28",
       "review_count": 0,
-      "next_review": "2026-07-29"
+      "next_review": "2026-07-29",
+      "language": "de"
     },
     "Vorbereitung": {
       "first_seen": "2026-07-28",
       "review_count": 0,
-      "next_review": "2026-07-29"
+      "next_review": "2026-07-29",
+      "language": "de"
     },
     "sich überfordert fühlen": {
       "first_seen": "2026-07-28",
       "review_count": 0,
-      "next_review": "2026-07-29"
+      "next_review": "2026-07-29",
+      "language": "de"
     },
     "Wecker": {
       "first_seen": "2026-07-29",
       "review_count": 0,
-      "next_review": "2026-07-30"
+      "next_review": "2026-07-30",
+      "language": "de"
     },
     "Zahnbürste": {
       "first_seen": "2026-07-29",
       "review_count": 0,
-      "next_review": "2026-07-30"
+      "next_review": "2026-07-30",
+      "language": "de"
     },
     "Kissen": {
       "first_seen": "2026-07-29",
       "review_count": 0,
-      "next_review": "2026-07-30"
+      "next_review": "2026-07-30",
+      "language": "de"
     },
     "sich vorstellen": {
       "first_seen": "2026-07-29",
       "review_count": 0,
-      "next_review": "2026-07-30"
+      "next_review": "2026-07-30",
+      "language": "de"
     },
     "Kuchen": {
       "first_seen": "2026-07-30",
       "review_count": 0,
-      "next_review": "2026-07-31"
+      "next_review": "2026-07-31",
+      "language": "de"
     },
     "Apfel": {
       "first_seen": "2026-07-30",
       "review_count": 0,
-      "next_review": "2026-07-31"
+      "next_review": "2026-07-31",
+      "language": "de"
     },
     "Käse": {
       "first_seen": "2026-07-30",
       "review_count": 0,
-      "next_review": "2026-07-31"
+      "next_review": "2026-07-31",
+      "language": "de"
     },
     "Termin absagen": {
       "first_seen": "2026-07-30",
       "review_count": 0,
-      "next_review": "2026-07-31"
+      "next_review": "2026-07-31",
+      "language": "de"
     },
     "Lohn": {
       "first_seen": "2026-07-31",
       "review_count": 0,
-      "next_review": "2026-08-01"
+      "next_review": "2026-08-01",
+      "language": "de"
     },
     "Bild": {
       "first_seen": "2026-07-31",
       "review_count": 0,
-      "next_review": "2026-08-01"
+      "next_review": "2026-08-01",
+      "language": "de"
     },
     "Tisch": {
       "first_seen": "2026-07-31",
       "review_count": 0,
-      "next_review": "2026-08-01"
+      "next_review": "2026-08-01",
+      "language": "de"
     },
     "Ärger": {
       "first_seen": "2026-07-31",
       "review_count": 0,
-      "next_review": "2026-08-01"
+      "next_review": "2026-08-01",
+      "language": "de"
     },
     "Abteilung": {
       "first_seen": "2026-07-31",
       "review_count": 0,
-      "next_review": "2026-08-01"
+      "next_review": "2026-08-01",
+      "language": "de"
     },
     "Heft": {
       "first_seen": "2026-08-01",
       "review_count": 0,
-      "next_review": "2026-08-02"
+      "next_review": "2026-08-02",
+      "language": "de"
     },
     "Augenblick": {
       "first_seen": "2026-08-01",
       "review_count": 0,
-      "next_review": "2026-08-02"
+      "next_review": "2026-08-02",
+      "language": "de"
     },
     "Eile": {
       "first_seen": "2026-08-01",
       "review_count": 0,
-      "next_review": "2026-08-02"
+      "next_review": "2026-08-02",
+      "language": "de"
     },
     "Lust": {
       "first_seen": "2026-08-01",
       "review_count": 0,
-      "next_review": "2026-08-02"
+      "next_review": "2026-08-02",
+      "language": "de"
     },
     "sich einlassen": {
       "first_seen": "2026-08-01",
       "review_count": 0,
-      "next_review": "2026-08-02"
+      "next_review": "2026-08-02",
+      "language": "de"
     },
     "Hefte": {
       "first_seen": "2026-08-03",
       "review_count": 0,
-      "next_review": "2026-08-04"
+      "next_review": "2026-08-04",
+      "language": "de"
     },
     "sich gewöhnen": {
       "first_seen": "2026-08-03",
       "review_count": 0,
-      "next_review": "2026-08-04"
+      "next_review": "2026-08-04",
+      "language": "de"
     },
     "Eimer": {
       "first_seen": "2026-08-04",
       "review_count": 0,
-      "next_review": "2026-08-05"
+      "next_review": "2026-08-05",
+      "language": "de"
     },
     "Messer": {
       "first_seen": "2026-08-04",
       "review_count": 0,
-      "next_review": "2026-08-05"
+      "next_review": "2026-08-05",
+      "language": "de"
     },
     "Gabel": {
       "first_seen": "2026-08-04",
       "review_count": 0,
-      "next_review": "2026-08-05"
+      "next_review": "2026-08-05",
+      "language": "de"
     },
     "Lebensmittel": {
       "first_seen": "2026-08-04",
       "review_count": 0,
-      "next_review": "2026-08-05"
+      "next_review": "2026-08-05",
+      "language": "de"
     },
     "Hindernis": {
       "first_seen": "2026-08-04",
       "review_count": 0,
-      "next_review": "2026-08-05"
+      "next_review": "2026-08-05",
+      "language": "de"
     },
     "sich durchdenken": {
       "first_seen": "2026-08-04",
       "review_count": 0,
-      "next_review": "2026-08-05"
+      "next_review": "2026-08-05",
+      "language": "de"
     },
     "Wechselgeld": {
       "first_seen": "2026-08-05",
       "review_count": 0,
-      "next_review": "2026-08-06"
+      "next_review": "2026-08-06",
+      "language": "de"
     },
     "Etikett": {
       "first_seen": "2026-08-05",
       "review_count": 0,
-      "next_review": "2026-08-06"
+      "next_review": "2026-08-06",
+      "language": "de"
     },
     "Quittung": {
       "first_seen": "2026-08-05",
       "review_count": 0,
-      "next_review": "2026-08-06"
+      "next_review": "2026-08-06",
+      "language": "de"
     },
     "Maßnahme": {
       "first_seen": "2026-08-05",
       "review_count": 0,
-      "next_review": "2026-08-06"
+      "next_review": "2026-08-06",
+      "language": "de"
     },
     "Geduldsprobe": {
       "first_seen": "2026-08-05",
       "review_count": 0,
-      "next_review": "2026-08-06"
+      "next_review": "2026-08-06",
+      "language": "de"
     },
     "sich einmischen": {
       "first_seen": "2026-08-05",
       "review_count": 0,
-      "next_review": "2026-08-06"
+      "next_review": "2026-08-06",
+      "language": "de"
     },
     "Zustellung": {
       "first_seen": "2026-08-06",
       "review_count": 0,
-      "next_review": "2026-08-07"
+      "next_review": "2026-08-07",
+      "language": "de"
     },
     "Größe": {
       "first_seen": "2026-08-06",
       "review_count": 0,
-      "next_review": "2026-08-07"
+      "next_review": "2026-08-07",
+      "language": "de"
     },
     "Schein": {
       "first_seen": "2026-08-06",
       "review_count": 0,
-      "next_review": "2026-08-07"
+      "next_review": "2026-08-07",
+      "language": "de"
     },
     "Güterzug": {
       "first_seen": "2026-08-06",
       "review_count": 0,
-      "next_review": "2026-08-07"
+      "next_review": "2026-08-07",
+      "language": "de"
     },
     "Auszug": {
       "first_seen": "2026-08-06",
       "review_count": 0,
-      "next_review": "2026-08-07"
+      "next_review": "2026-08-07",
+      "language": "de"
     },
     "sich Gedanken machen über": {
       "first_seen": "2026-08-06",
       "review_count": 0,
-      "next_review": "2026-08-07"
+      "next_review": "2026-08-07",
+      "language": "de"
     },
     "Bestellung": {
       "first_seen": "2026-08-07",
       "review_count": 0,
-      "next_review": "2026-08-08"
+      "next_review": "2026-08-08",
+      "language": "de"
     },
     "Bedienung": {
       "first_seen": "2026-08-07",
       "review_count": 0,
-      "next_review": "2026-08-08"
+      "next_review": "2026-08-08",
+      "language": "de"
     },
     "Haftung": {
       "first_seen": "2026-08-07",
       "review_count": 0,
-      "next_review": "2026-08-08"
+      "next_review": "2026-08-08",
+      "language": "de"
     },
     "Putz": {
       "first_seen": "2026-08-08",
       "review_count": 0,
-      "next_review": "2026-08-09"
+      "next_review": "2026-08-09",
+      "language": "de"
     },
     "Nachbarschaft": {
       "first_seen": "2026-08-08",
       "review_count": 0,
-      "next_review": "2026-08-09"
+      "next_review": "2026-08-09",
+      "language": "de"
     },
     "sich einleben": {
       "first_seen": "2026-08-08",
       "review_count": 0,
-      "next_review": "2026-08-09"
+      "next_review": "2026-08-09",
+      "language": "de"
+    },
+    "すみません": {
+      "language": "ja",
+      "first_seen": "2026-08-09",
+      "review_count": 0,
+      "next_review": "2026-08-10"
     }
   },
-  "grammar_index": 18
+  "grammar_index": 19,
+  "queue": [],
+  "update_offset": 203659293
 }
