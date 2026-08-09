@@ -78,7 +78,9 @@ ANTHROPIC_API_KEY  = os.environ.get("ANTHROPIC_API_KEY", "")
 
 # The ONLY Telegram user the bot accepts words/commands from. Keyed on the
 # numeric user id (usernames can change). Overridable via env, defaults to you.
-ALLOWED_USER_ID = int(os.environ.get("TELEGRAM_ALLOWED_USER_ID", "142201469"))
+# NOTE: use `or` — an unset GitHub secret is passed as an EMPTY string, not
+# absent, so a plain get(..., default) would hand int() an "" and crash.
+ALLOWED_USER_ID = int(os.environ.get("TELEGRAM_ALLOWED_USER_ID") or "142201469")
 
 # --------------------------------------------------------------------------- #
 #  CONFIG
