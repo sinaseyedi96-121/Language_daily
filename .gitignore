@@ -1,6 +1,9 @@
 # Secrets — never upload these
 .env
 
+# Local backups (may contain old secrets) — never upload
+_old_local_backup_*/
+
 # Python junk
 __pycache__/
 *.pyc
