@@ -100,9 +100,9 @@
     },
     "Geld": {
       "first_seen": "2026-07-06",
-      "review_count": 1,
-      "next_review": "2026-07-15",
-      "last_reviewed": "2026-07-12",
+      "review_count": 2,
+      "next_review": "2026-08-17",
+      "last_reviewed": "2026-08-10",
       "language": "de"
     },
     "Lage": {
@@ -436,9 +436,10 @@
     },
     "sich leisten": {
       "first_seen": "2026-07-13",
-      "review_count": 0,
-      "next_review": "2026-07-14",
-      "language": "de"
+      "review_count": 1,
+      "next_review": "2026-08-13",
+      "language": "de",
+      "last_reviewed": "2026-08-10"
     },
     "Fahrstuhl": {
       "first_seen": "2026-07-14",
@@ -1179,7 +1180,7 @@
       "next_review": "2026-08-10"
     }
   },
-  "grammar_index": 19,
+  "grammar_index": 0,
   "queue": [],
   "update_offset": 203659293
 }
