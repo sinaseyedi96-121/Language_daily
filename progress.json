@@ -450,15 +450,17 @@
     },
     "Bahnhof": {
       "first_seen": "2026-07-14",
-      "review_count": 0,
-      "next_review": "2026-07-15",
-      "language": "de"
+      "review_count": 1,
+      "next_review": "2026-08-15",
+      "language": "de",
+      "last_reviewed": "2026-08-12"
     },
     "Gepäckaufbewahrung": {
       "first_seen": "2026-07-14",
-      "review_count": 0,
-      "next_review": "2026-07-15",
-      "language": "de"
+      "review_count": 1,
+      "next_review": "2026-08-15",
+      "language": "de",
+      "last_reviewed": "2026-08-12"
     },
     "Makler": {
       "first_seen": "2026-07-14",
@@ -1181,7 +1183,7 @@
       "next_review": "2026-08-10"
     }
   },
-  "grammar_index": 1,
+  "grammar_index": 2,
   "queue": [],
   "update_offset": 203659293
 }
