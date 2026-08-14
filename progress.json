@@ -478,15 +478,17 @@
     },
     "Besichtigung": {
       "first_seen": "2026-07-14",
-      "review_count": 0,
-      "next_review": "2026-07-15",
-      "language": "de"
+      "review_count": 1,
+      "next_review": "2026-08-17",
+      "language": "de",
+      "last_reviewed": "2026-08-14"
     },
     "Voraussetzung": {
       "first_seen": "2026-07-14",
-      "review_count": 0,
-      "next_review": "2026-07-15",
-      "language": "de"
+      "review_count": 1,
+      "next_review": "2026-08-17",
+      "language": "de",
+      "last_reviewed": "2026-08-14"
     },
     "Strom": {
       "first_seen": "2026-07-15",
@@ -1189,9 +1191,33 @@
       "first_seen": "2026-08-13",
       "review_count": 0,
       "next_review": "2026-08-14"
+    },
+    "Dank": {
+      "language": "de",
+      "first_seen": "2026-08-14",
+      "review_count": 0,
+      "next_review": "2026-08-15"
+    },
+    "Gewinn": {
+      "language": "de",
+      "first_seen": "2026-08-14",
+      "review_count": 0,
+      "next_review": "2026-08-15"
+    },
+    "Verzug": {
+      "language": "de",
+      "first_seen": "2026-08-14",
+      "review_count": 0,
+      "next_review": "2026-08-15"
+    },
+    "Belehrung": {
+      "language": "de",
+      "first_seen": "2026-08-14",
+      "review_count": 0,
+      "next_review": "2026-08-15"
     }
   },
-  "grammar_index": 3,
+  "grammar_index": 4,
   "queue": [],
   "update_offset": 203659293
 }
