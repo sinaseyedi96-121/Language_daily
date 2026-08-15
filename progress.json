@@ -114,16 +114,16 @@
     },
     "Tasse": {
       "first_seen": "2026-07-06",
-      "review_count": 1,
-      "next_review": "2026-07-16",
-      "last_reviewed": "2026-07-13",
+      "review_count": 2,
+      "next_review": "2026-08-22",
+      "last_reviewed": "2026-08-15",
       "language": "de"
     },
     "Grund": {
       "first_seen": "2026-07-06",
-      "review_count": 1,
-      "next_review": "2026-07-16",
-      "last_reviewed": "2026-07-13",
+      "review_count": 2,
+      "next_review": "2026-08-22",
+      "last_reviewed": "2026-08-15",
       "language": "de"
     },
     "Pflicht": {
@@ -1215,9 +1215,15 @@
       "first_seen": "2026-08-14",
       "review_count": 0,
       "next_review": "2026-08-15"
+    },
+    "Stecker": {
+      "language": "de",
+      "first_seen": "2026-08-15",
+      "review_count": 0,
+      "next_review": "2026-08-16"
     }
   },
-  "grammar_index": 4,
+  "grammar_index": 5,
   "queue": [],
   "update_offset": 203659293
 }
